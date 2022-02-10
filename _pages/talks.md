@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /talks/
 title: talks
 description: Some of my previous public talks
 nav: true

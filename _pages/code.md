@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /code/
 title: code
 description: Code for published papers.
 nav: true
