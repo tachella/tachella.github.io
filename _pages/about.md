@@ -2,22 +2,22 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://www.cnrs.fr/'>CNRS</a> & <a href='http://www.ens-lyon.fr/'>ENS de Lyon>CNRS</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>ENS de Lyon</p>
+    <p>Laboratoire de Physique</p>
     <p>Allée de l'Italie 46</p>
     <p>Lyon, France</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-CNRS researcher at the École Normale Supérieure de Lyon (Lyon, France). From December 2021, I am a CNRS researcher, working at the Sysiphe laboratory, École Normale Supérieure de Lyon, Lyon, France. My research lies in the intersection of inverse problems and machine learning (and deep learning in particular). I am particularly interested unsupervised training strategies for solving imaging inverse problems.
+From December 2021, I am a CNRS researcher, working at the Sysiphe laboratory, École Normale Supérieure de Lyon, Lyon, France. My research lies in the intersection of inverse problems and machine learning (and deep learning in particular). I am particularly interested unsupervised training strategies for solving imaging inverse problems.
 
 Before, I was a research associate in Prof. Mike Davies group at the University of Edinburgh (Edinburgh, UK) from 2020 to 2021. My research focused on unsupervised learning methods for solving inverse problems via deep neural networks, understanding the implicit bias of convolutional networks and sketching methods for single-photon lidar.
 
