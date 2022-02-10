@@ -8,17 +8,19 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>ENS de Lyon</p>
+    <p>Allée de l'Italie 46</p>
+    <p>Lyon, France</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+CNRS researcher at the École Normale Supérieure de Lyon (Lyon, France). From December 2021, I am a CNRS researcher, working at the Sysiphe laboratory, École Normale Supérieure de Lyon, Lyon, France. My research lies in the intersection of inverse problems and machine learning (and deep learning in particular). I am particularly interested unsupervised training strategies for solving imaging inverse problems.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before, I was a research associate in Prof. Mike Davies group at the University of Edinburgh (Edinburgh, UK) from 2020 to 2021. My research focused on unsupervised learning methods for solving inverse problems via deep neural networks, understanding the implicit bias of convolutional networks and sketching methods for single-photon lidar.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I was a PhD student at Heriot-Watt University (Edinburgh, UK) and TéSA lab (Toulouse, France) under the supervision of Dr. Yoann Altmann, Prof. Jean-Yves Tourneret and Prof. Steve McLaughlin. My PhD thesis focused on Bayesian methods for inverse problems, with a particular interest in low-photon imaging applications.
+
+You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
