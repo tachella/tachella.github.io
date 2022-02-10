@@ -23,4 +23,3 @@ Before, I was a research associate in Prof. Mike Davies group at the University 
 
 I was a PhD student at Heriot-Watt University (Edinburgh, UK) and TéSA lab (Toulouse, France) under the supervision of Dr. Yoann Altmann, Prof. Jean-Yves Tourneret and Prof. Steve McLaughlin. My PhD thesis focused on Bayesian methods for inverse problems, with a particular interest in low-photon imaging applications.
 
-You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
