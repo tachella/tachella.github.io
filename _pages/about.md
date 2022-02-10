@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.cnrs.fr/'>CNRS</a> & <a href='http://www.ens-lyon.fr/'>ENS de Lyon>CNRS</a>
+subtitle: <a href='https://www.cnrs.fr/'>CNRS</a> & <a href='http://www.ens-lyon.fr/'>ENS de Lyon</a>
 
 profile:
   align: right
