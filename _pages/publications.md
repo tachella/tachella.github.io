@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Selected publications. You can find a full list of publications in my [Google Scholar](https://scholar.google.co.uk/citations?user=u_hH-fUAAAAJ&hl).
+description: Selected publications. You can find a full list of publications in my Google Scholar.
 years: [2022, 2021, 2020, 2019]
 nav: true
 ---
