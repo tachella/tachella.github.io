@@ -7,8 +7,8 @@ subtitle: <a href='https://www.cnrs.fr/'>CNRS</a> & <a href='http://www.ens-lyon
 profile:
   align: right
   image: prof_pic.jpg
-  address: > 
-  <p> first.last@ens-lyon.fr</p>
+  address: <p> first.last@ens-lyon.fr</p>
+  
 
 news: true  # includes a list of news items
 selected_papers: yes # includes a list of papers marked as "selected={true}"
