@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /code/
-title: Code
+title: code
 description: Code for published papers.
 nav: true
 ---
