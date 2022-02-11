@@ -1,10 +1,9 @@
 ---
 layout: post
-title: a post with diagrams
+title: Sketching for single-photon lidar
 date: 2021-07-04 17:39:00
-description: an example of a blog post with diagrams
+description: sketching for lidar
 ---
-
 
 Single-photon lidar is an emerging ranging technique that can obtain 3D information at kilometre distance with centimetre precision, and has important applications in <strong><a href="http://localhost/mywebsite/2020/08/01/advances-in-single-photon-lidar-for-autonomous-vehicles/" data-type="post" data-id="337">self-driving cars</a>, forest canopy monitoring, <a href="http://localhost/mywebsite/2020/09/01/seeing-around-corners-with-edge-resolved-transient-imaging/" data-type="post" data-id="429">non-line-of-sight imaging</a> </strong>and more. This modality consists of contracting a histogram of time-of-arrival of individual photons per pixel. For each object in the line-of-sight of the device there is a peak in the histogram. These peaks are found by a 3D reconstruction algorithm that takes into account the Poisson statistics of the photon-count data, while promoting spatial smoothness in the reconstructed point clouds. In a previous post, I presented <a href="http://localhost/mywebsite/2019/10/29/real-time-3d-reconstruction-from-single-photon-lidar-data-using-plug-and-play-point-cloud-denoisers/" data-type="post" data-id="210">an algorithm</a> that can find multiple peaks per pixel in a matter of milliseconds even in challenging very long range scenarios with high background noise. As the algorithm needs to process the histogram data, the <strong>reconstruction time</strong> depends (linearly) on the total number of non-zero bins in the histogram:
 
