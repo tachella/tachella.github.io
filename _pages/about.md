@@ -8,7 +8,6 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p><a href='https://www.cnrs.fr/'>CNRS</a> & <a href='http://www.ens-lyon.fr/'>ENS de Lyon</a></p>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
