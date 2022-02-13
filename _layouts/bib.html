@@ -2,9 +2,11 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr">
+        <div class="col-sm-2 container_img">
         {%- if entry.abbr -%}
+          <div class="card hooverable">
             <img class="card-img-top" src="{{ entry.abbr | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
+          </div>
         {%- endif -%}
         </div>
 
