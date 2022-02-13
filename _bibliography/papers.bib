@@ -97,7 +97,6 @@ abstract = {In various imaging problems, we only have access to compressed measu
 	address = {Guadaloupe, West Indies},
 	pages={1-5}, 
 	doi={10.1109/CAMSAP.2017.8313128}, 
-	ISSN={}, 
 	abbr = {tachella2019crt3d.gif},
 	code = {https://gitlab.com/Tachella/real-time-single-photon-lidar},
 	month={Dec},}
@@ -125,7 +124,9 @@ abstract = {In various imaging problems, we only have access to compressed measu
 	keywords = {Electrical Engineering and Systems Science - Signal Processing},
 	year = {2019},
 	abbr = {tachella2019musapop.gif},
-	code = {},
+	code = {https://gitlab.com/Tachella/musapop},
+	pdf = {https://ieeexplore.ieee.org/document/8854866},
+	abstract = {Light detection and ranging (Lidar) single-photon devices capture range and intensity information from a three-dimensional (3-D) scene. This modality enables long range 3-D reconstruction with high range precision and low laser power. A multispectral single-photon Lidar system provides additional spectral diversity, allowing the discrimination of different materials. However, the main drawback of such systems can be the long acquisition time needed to collect enough photons in each spectral band. In this work, we tackle this problem in two ways: first, we propose a Bayesian 3-D reconstruction algorithm that is able to find multiple surfaces per pixel, using few photons, i.e., shorter acquisitions. In contrast to previous algorithms, the novel method processes jointly all the spectral bands, obtaining better reconstructions using less photon detections. The proposed model promotes spatial correlation between neighbouring points within a given surface using spatial point processes. Secondly, we account for different spatial and spectral subsampling schemes, which reduce the total number of measurements, without significant degradation of the reconstruction performance. In this way, the total acquisition time, memory requirements and computational time can be significantly reduced. The experiments performed using both synthetic and real single-photon Lidar data demonstrate the advantages of tailored sampling schemes over random alternatives. Furthermore, the proposed algorithm yields better estimates than other existing methods for multi-surface reconstruction using multispectral Lidar data.},
 	month = {Apr},
 }
 
@@ -139,6 +140,8 @@ abstract = {In various imaging problems, we only have access to compressed measu
 	year = {2019},
 	abbr = {tachella2019manipop.gif},
 	doi = {10.1137/18M1183972},
+	arxiv = {1810.11633},
+	abstract = {Light detection and ranging (Lidar) data can be used to capture the depth and intensity profile of a 3D scene. This modality relies on constructing, for each pixel, a histogram of time delays between emitted light pulses and detected photon arrivals. In a general setting, more than one surface can be observed in a single pixel. The problem of estimating the number of surfaces, their reflectivity and position becomes very challenging in the low-photon regime (which equates to short acquisition times) or relatively high background levels (i.e., strong ambient illumination). This paper presents a new approach to 3D reconstruction using single-photon, single-wavelength Lidar data, which is capable of identifying multiple surfaces in each pixel. Adopting a Bayesian approach, the 3D structure to be recovered is modelled as a marked point process and reversible jump Markov chain Monte Carlo (RJ-MCMC) moves are proposed to sample the posterior distribution of interest. In order to promote spatial correlation between points belonging to the same surface, we propose a prior that combines an area interaction process and a Strauss process. New RJ-MCMC dilation and erosion updates are presented to achieve an efficient exploration of the configuration space. To further reduce the computational load, we adopt a multiresolution approach, processing the data from a coarse to the finest scale. The experiments performed with synthetic and real data show that the algorithm obtains better reconstructions than other recently published optimization algorithms for lower execution times.},
 	pdf = {https://hal.archives-ouvertes.fr/hal-02185077/document},
 	code = {https://gitlab.com/Tachella/manipop},
 	youtube = {pk0tLCCqnVk},
@@ -185,6 +188,9 @@ abstract = {In various imaging problems, we only have access to compressed measu
 	ISSN={2219-5491},
 	abbr = {tachella2019detection.png},
 	address = {A Coruna, Spain},
+	code = {https://gitlab.com/Tachella/lidardetection},
+	pdf = {https://ieeexplore.ieee.org/document/8903062},
+	abs = {Single-photon light detection and ranging (Lidar) devices can be used to obtain range and reflectivity information from 3D scenes. However, reconstructing the 3D surfaces from the raw waveforms can be very challenging, in particular when the number of spurious background detections is large compared to the number of signal detections. This paper introduces a new and fast detection algorithm, which can be used to assess the presence of objects/surfaces in each waveform, allowing only the histograms where the imaged surfaces are present to be further processed. The method is compared to state-of-the-art 3D reconstruction methods using synthetic and real single-photon data and the results illustrate its benefits for fast and robust target detection using single-photon data.},
 	month={Sep.},}
 
 @inproceedings{tachelladetection2,
@@ -197,6 +203,9 @@ abstract = {In various imaging problems, we only have access to compressed measu
 	pages = {252 -- 261},
 	year = {2019},
 	month = {Sep},
+	pdf = {https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11138/111380T/On-fast-object-detection-using-single-photon-lidar-data/10.1117/12.2527685.short},
+	abstract = {Light detection and ranging (Lidar) systems based on single-photon detection can be used to obtain range and reflectivity information from 3D scenes with high range resolution. However, reconstructing the 3D surfaces from the raw single-photon waveforms is challenging, in particular when a limited number of photons is detected and when the ratio of spurious background detection events is large. This paper reviews a set of fast detection algorithms, which can be used to assess the presence of objects/surfaces in each waveform, allowing only the histograms where the imaged surfaces are present to be further processed. The original method we recently proposed is extended here using a multiscale approach to further reduce the computational complexity of the detection process. The proposed methods are compared to state-of-the-art 3D reconstruction methods using synthetic and real single-photon data and the results illustrate their benefits for fast and robust target detection.},
+	code = {https://gitlab.com/Tachella/lidardetection},
 	doi = {10.1117/12.2527685},
 }
 
@@ -212,5 +221,7 @@ abstract = {In various imaging problems, we only have access to compressed measu
 	doi={10.23919/EUSIPCO.2018.8553175},
 	ISSN={2219-5491},
 	address = {Rome, Italy},
+	pdf = {https://ieeexplore.ieee.org/abstract/document/8553175},
 	abbr = {tachella2018mcmc.png},
+	abstract = {This paper investigates different algorithms to perform image restoration from single-photon measurements corrupted with Poisson noise. The restoration problem is formulated in a Bayesian framework and several state-of-the-art Monte Carlo samplers are considered to estimate the unknown image and quantify its uncertainty. The different samplers are compared through a series of experiments conducted with synthetic images. The results demonstrate the scaling properties of the proposed samplers as the dimensionality of the problem increases and the number of photons decreases. Moreover, our experiments show that for a certain photon budget (i.e., acquisition time of the imaging device), downsampling the observations can yield better reconstruction results.},
 	month={Sep.},}
