@@ -2,7 +2,7 @@
 layout: page
 permalink: /talks/
 title: talks
-description: Some of my previous public talks
+description: Some selected talks
 years: [2022, 2021, 2020, 2019]
 nav: true
 ---
