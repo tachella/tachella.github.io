@@ -1,8 +1,6 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
 @article{tachella2022sampling,
   title={Sampling Theorems for Learning from Incomplete Measurements},
   author={Tachella, Julian and Chen, Dongdong and Davies, Mike},
@@ -21,6 +19,8 @@
   blog = {2021-10-01-equivariant},
   arxiv={2111.12855},
   month = {December},
+  abbr = {chen2021robust.png},
+  code = {https://github.com/edongdongchen/REI},
   abstract = {Deep networks provide state-of-the-art performance in multiple imaging inverse problems ranging from medical imaging to computational photography. However, most existing networks are trained with clean signals which are often hard or impossible to obtain. Equivariant imaging (EI) is a recent self-supervised learning framework that exploits the group invariance present in signal distributions to learn a reconstruction function from partial measurement data alone. While EI results are impressive, its performance degrades with increasing noise. In this paper, we propose a Robust Equivariant Imaging (REI) framework which can learn to image from noisy partial measurements alone. The proposed method uses Stein's Unbiased Risk Estimator (SURE) to obtain a fully unsupervised training loss that is robust to noise. We show that REI leads to considerable performance gains on linear and nonlinear inverse problems, thereby paving the way for robust unsupervised imaging with deep networks.},
 }
 
@@ -66,7 +66,7 @@ abstract = {In various imaging problems, we only have access to compressed measu
     pdf = {https://openaccess.thecvf.com/content/CVPR2021/papers/Tachella_The_Neural_Tangent_Link_Between_CNN_Denoisers_and_Non-Local_Filters_CVPR_2021_paper.pdf},
     sup = {https://openaccess.thecvf.com/content/CVPR2021/supplemental/Tachella_The_Neural_Tangent_CVPR_2021_supplemental.pdf},
  selected={true},
- youtube = {vLxzxp2boyY},
+ video = {https://youtu.be/vLxzxp2boyY},
  abstract = {Convolutional Neural Networks (CNNs) are now a well-established tool for solving computational imaging problems. Modern CNN-based algorithms obtain state-of-the-art performance in diverse image restoration problems. Furthermore, it has been recently shown that, despite being highly overparameterized, networks trained with a single corrupted image can still perform as well as fully trained networks. We introduce a formal link between such networks through their neural tangent kernel (NTK), and well-known non-local filtering techniques, such as non-local means or BM3D. The filtering function associated with a given network architecture can be obtained in closed form without need to train the network, being fully characterized by the random initialization of the network weights. While the NTK theory accurately predicts the filter associated with networks trained using standard gradient descent, our analysis shows that it falls short to explain the behaviour of networks trained using the popular Adam optimizer. The latter achieves a larger change of weights in hidden layers, adapting the non-local filtering function during training. We evaluate our findings via extensive image denoising experiments.},
 }
 
@@ -83,7 +83,7 @@ abstract = {In various imaging problems, we only have access to compressed measu
   abbr = {rapp2020seeing.gif},
   code = {https://github.com/tachella/ERTI},
   pdf = {https://www.nature.com/articles/s41467-020-19727-4.pdf},
-  youtube = {1MDwFVky-wg},
+  video = {https://youtu.be/1MDwFVky-wg},
 }
 
 
@@ -144,7 +144,7 @@ abstract = {In various imaging problems, we only have access to compressed measu
 	abstract = {Light detection and ranging (Lidar) data can be used to capture the depth and intensity profile of a 3D scene. This modality relies on constructing, for each pixel, a histogram of time delays between emitted light pulses and detected photon arrivals. In a general setting, more than one surface can be observed in a single pixel. The problem of estimating the number of surfaces, their reflectivity and position becomes very challenging in the low-photon regime (which equates to short acquisition times) or relatively high background levels (i.e., strong ambient illumination). This paper presents a new approach to 3D reconstruction using single-photon, single-wavelength Lidar data, which is capable of identifying multiple surfaces in each pixel. Adopting a Bayesian approach, the 3D structure to be recovered is modelled as a marked point process and reversible jump Markov chain Monte Carlo (RJ-MCMC) moves are proposed to sample the posterior distribution of interest. In order to promote spatial correlation between points belonging to the same surface, we propose a prior that combines an area interaction process and a Strauss process. New RJ-MCMC dilation and erosion updates are presented to achieve an efficient exploration of the configuration space. To further reduce the computational load, we adopt a multiresolution approach, processing the data from a coarse to the finest scale. The experiments performed with synthetic and real data show that the algorithm obtains better reconstructions than other recently published optimization algorithms for lower execution times.},
 	pdf = {https://hal.archives-ouvertes.fr/hal-02185077/document},
 	code = {https://gitlab.com/Tachella/manipop},
-	youtube = {pk0tLCCqnVk},
+	video = {https://youtu.be/pk0tLCCqnVk},
 }
 
 
