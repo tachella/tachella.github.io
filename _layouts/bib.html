@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-sm-2 abbr">
         {%- if entry.abbr -%}
-            <img src="{{ entry.abbr | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" width="100%">
+            <img class="img-fluid z-dept-1" src="{{ entry.abbr | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
         {%- endif -%}
         </div>
 
