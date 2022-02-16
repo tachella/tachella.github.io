@@ -8,11 +8,9 @@
       <div class="row g-0">
         {%- if project.img -%}
         <div class="card-img col-md-6">
-          {%- if project.img %}
-            {%- include figure.html 
-              path=project.img 
-              alt="project thumbnail" -%}
-          {%- endif %}
+          {%- include figure.html 
+            path=project.img 
+            alt="project thumbnail" -%}
         </div>
         <div class="col-md-6">
         {%- else -%}
