@@ -37,7 +37,7 @@ Experiments in {% cite chen2021equivariant %} and {% cite chen2021equivariant %}
 ## Theory
 
 Despite the good empirical results, a few important theoretical questions arise: When is unsupervised learning possible? How big has the group invariance has to be? How many measurements per observation do we need ?
-A first step to answering this questions can be found in {% cite tachella2022sampling %}, which analised the case of learning through multiple independent operators $$A_1,\dots,A_n$$.
+A first step to answering this questions can be found in {% cite tachella2022sampling %}, which analised the case of learning through multiple independent operators $$A_1,\dots,A_G$$.
 
 ### Related papers
 <div class="publications">
