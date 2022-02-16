@@ -145,7 +145,6 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
   - jekyll-imagemagick
-  - jekyll-responsive-image
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
