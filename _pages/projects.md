@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: On-going research projects
 nav: true
-display_categories: [inverse problems]
+display_categories: [work]
 horizontal: false
 ---
 
