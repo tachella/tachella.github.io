@@ -2,7 +2,7 @@
 layout: page
 title: 3D reconstruction from single-photon data
 description: 
-img: assets/img/tachellagenmanipop.gif
+img: assets/img/tachellagenmanipop2.gif
 importance: 5
 category: work
 ---
