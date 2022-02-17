@@ -1,6 +1,6 @@
 ---
 layout: page
-title: understanding deep networks for imaging
+title: Understanding deep networks for imaging
 description: 
 img: assets/img/understanding.PNG
 importance: 2

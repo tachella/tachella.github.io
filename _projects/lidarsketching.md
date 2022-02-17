@@ -24,9 +24,10 @@ $$\Phi_k(t) = [\cos(w_k t),  \sin(w_kt)]^{T} \quad \text{for} \quad k=1, \dots, 
 
 where $$t$$ denotes the time of arrival. The statistics can be <strong>computed on-the-fly</strong>, i.e. updated with each photon arrival, hence completely by-passing the need to construct a histogram. Below you can see the large difference between reducing the data by coarse binning the histogram and our proposed method:
 
+![Fig 2: Coarse binning and sketching](/assets/img/sheehan2021sketching2.gif)
+
 In {% cite sheehan2021detection %}, we propose detection methods (i.e., deciding whether there is a surface in a given pixel), which only require access to the sketched data and perform similarly to the other detection methods which require access to time-of-arrival histograms.
 
-<div><figure><img src="{{ sheehan2021sketching2.gif | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}"></figure></div>
 
 ### Related papers
 <div class="publications">
