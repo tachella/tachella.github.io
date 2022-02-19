@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://www.cnrs.fr/'>CNRS</a> & <a href='http://www.ens-lyon.fr/'>ENS de Lyon</a>
 
