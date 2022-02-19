@@ -7,7 +7,7 @@ first_name: Julián
 middle_name: 
 last_name: Tachella
 email: julian.tachella@ens-lyon.fr
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: signal processing > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
 keywords: signal processing, computational imaging, CNRS, deep learning  # add your own keywords or leave empty
 
