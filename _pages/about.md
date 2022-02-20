@@ -21,3 +21,4 @@ Before, I was a research associate in [Mike Davies group](https://scholar.google
 
 I did my PhD student at [Heriot-Watt University](https://www.hw.ac.uk/) (Edinburgh, UK) and [TéSA lab](https://www.tesa.prd.fr/) (Toulouse, France) under the supervision of [Yoann Altmann](https://yoannaltmann.weebly.com/), [Jean-Yves Tourneret](http://tourneret.perso.enseeiht.fr/) and [Steve McLaughlin](https://scholar.google.co.uk/citations?user=z9wnHv8AAAAJ&hl=en). My thesis studied Bayesian methods for inverse problems, with a particular interest in low-photon imaging applications.
 
+__Code__ related to my publications can be found [here]({% link publications %}).
