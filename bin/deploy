@@ -91,6 +91,9 @@ then
 fi
 git checkout -b $DEPLOY_BRANCH
 
+# imagemagick version
+convert -version
+
 # Build site
 bundle exec jekyll build
 
