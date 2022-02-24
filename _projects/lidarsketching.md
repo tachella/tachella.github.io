@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sketching single-photon data
+title: Sketching Single-Photon Data
 description: 
 img: assets/img/sketching_summary.PNG
 importance: 4

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 3D reconstruction from single-photon data
+title: 3D Reconstruction From Single-Photon Data
 description: 
 img: assets/img/lidar_summary.png
 importance: 5
