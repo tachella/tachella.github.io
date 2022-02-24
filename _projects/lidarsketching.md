@@ -2,7 +2,7 @@
 layout: page
 title: Sketching single-photon data
 description: 
-img: assets/img/sheehan2021sketching3.gif
+img: assets/img/sketching_summary.PNG
 importance: 4
 category: work
 ---

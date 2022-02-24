@@ -2,7 +2,7 @@
 layout: page
 title: 3D reconstruction from single-photon data
 description: 
-img: assets/img/tachellagenmanipop2.gif
+img: assets/img/lidar_summary.png
 importance: 5
 category: work
 ---

@@ -92,8 +92,7 @@ fi
 git checkout -b $DEPLOY_BRANCH
 
 # imagemagick version
-sudo apt install imagemagick
-convert -version
+# convert -version
 
 # Build site
 bundle exec jekyll build
