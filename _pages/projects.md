@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /projects/
-description: On-going research
+description: Some on-going research projects
 nav: true
 display_categories: [work]
 horizontal: true
