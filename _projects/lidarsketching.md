@@ -28,7 +28,7 @@ where $$t$$ denotes the time of arrival. The statistics can be <strong>computed 
 
 In {% cite sheehan2021detection %}, we propose detection methods (i.e., deciding whether there is a surface in a given pixel), which only require access to the sketched data and perform similarly to the other detection methods which require access to time-of-arrival histograms.
 
-In {% cite tachella2022srt3d %}, we introduce a framework for using sketching together with spatially regularised reconstruction method, which can be applied to most existing spatial reconstruction methods (for example the ones in [this project](projects/3Dreconstruction/)), and is able to massively reduce their computational complexity in mid and high photon regimes.
+In {% cite tachella2022srt3d %}, we introduce a framework for using sketching together with spatially regularised reconstruction method, which can be applied to most existing spatial reconstruction methods (for example the ones in [this project]({% link projects/3Dreconstruction/ %}), and is able to massively reduce their computational complexity in mid and high photon regimes.
 
 
 ### Related papers
