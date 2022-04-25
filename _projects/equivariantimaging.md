@@ -36,17 +36,19 @@ Experiments in {% cite chen2021equivariant %} and {% cite chen2021equivariant %}
 
 ## Theory
 
-Despite the good empirical results, a few important theoretical questions arise: When is unsupervised learning possible? How big has the group invariance has to be? How many measurements per observation do we need ?
+Despite the promising empirical results, a few important theoretical questions arise: When is unsupervised learning possible? How big has the group invariance has to be? How many measurements per observation do we need ?
 
 We provide answers to these questions in {% cite tachella2022sampling %}: 
 
 ### Necessary Conditions
 
 In order to learn from measurement data alone, we need that the set range spaces of virtual operators $$AT_1^{\dagger},\dots,AT_{G}^{\dagger}$$ span the full ambient space $$\mathbb{R}^{n}$$, i.e.,
-\begin{equation}
-\text{rank}(\begin{bmatrix}
-AT_1 \\ \vdots \\ AT_G
-\end{bmatrix}) = n
+\begin{equation}\label{eq:necessary}
+\text{rank}\left(\begin{matrix}
+AT_1 \\ 
+ \vdots \\
+  AT_G
+\end{matrix}\right) = n
 \end{equation}
 
 This condition requires that $$m > \max_j c_j/s_j$$ where $${s_j}$$ and $${c_j}$$ are the dimension and multiplicities of the irreducible representations of the group action. Most group symmetries (translations, reflections or rotations of a signal) appearing in practice have $$\max_j c_j/s_j=n/G$$. In this case, we need at least 
@@ -55,11 +57,11 @@ m>n/G
 \end{equation}
  measurements. 
 
-Moreover, we require that the forward operator $$A$$ is __not__ equivariant to the group action. Otherwise, the concatenation of $$AT_1,\dots, AT_{G}$$ has rank $$m<n$$.
+Moreover, condition \eqref{eq:necessary} requires that the forward operator $$A$$ is __not__ equivariant to the group action. Otherwise, the concatenation of $$AT_1,\dots, AT_{G}$$ has rank $$m<n$$.
 
 ### Sufficient Condition
 
-In order to guarantee unique model recovery, we need to take into account the dimension of the signal set $$\mathcal{X}$$. Let $k$ be the box-counting dimension of $$\mathcal{X}$$ and let $G$ be a cyclic group where $\{c_j\}$ denote th  multiplicities of the irreducible representations. Then, almost every forward operator $$A\in \mathbb{R}{m\times n}$$  with 
+In order to guarantee unique model recovery, we need to take into account the dimension of the signal set $$\mathcal{X}$$. Let $$k$$ be the box-counting dimension of $$\mathcal{X}$$ and let $$G$$ be a cyclic group where $$\{c_j\}$$ denote th  multiplicities of the irreducible representations. Then, almost every forward operator $$A\in \mathbb{R}{m\times n}$$  with 
 \begin{equation}
 m> 2k + 1 + \max_j c_j 
 \end{equation}
@@ -69,6 +71,9 @@ m> 2k + 1 + n/G
 \end{equation}
 measurements.
 
+
+#### Multiple operators
+If the signal set is not group invariant, but we observe measurements through different operators $$A_1,\dots,A_G$$, then unsupervised from measurement data alone is possible. In this case the necessary condition on the number of measurements is $$m>n/G$$, and the sufficient condition is $$m>n/G+k$$. These results are included in {% cite tachella2022samplingshort %}.
 
 ### Related papers
 <div class="publications">
