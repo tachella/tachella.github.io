@@ -17,5 +17,4 @@ group :jekyll_plugins do
     gem 'webrick'
     gem 'htmlcompressor'
     gem 'htmlbeautifier'
-    gem 'kramdown-math-katex'
 end
