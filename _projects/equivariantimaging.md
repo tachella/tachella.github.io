@@ -45,8 +45,8 @@ We provide answers to these questions in {% cite tachella2022sampling %}:
 In order to learn from measurement data alone, we need that the set range spaces of virtual operators $$AT_1^{\dagger},\dots,AT_{G}^{\dagger}$$ span the full ambient space $$\mathbb{R}^{n}$$, i.e.,
 \begin{equation}\label{eq:necessary}
 \text{rank}\left(\begin{bmatrix}
-AT_1 \\
- \vdots \\
+AT_1 \\\
+ \vdots \\\
   AT_G
 \end{bmatrix}\right) = n
 \end{equation}
