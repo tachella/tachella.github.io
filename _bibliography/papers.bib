@@ -31,15 +31,16 @@
 
 
 @article{tachella2022samplingshort,
-  title={Sampling Theorems for Learning from Incomplete Measurements},
+  title={Unsupervised Learning From Incomplete Measurements for Inverse Problems},
   author={Tachella, Julian and Chen, Dongdong and Davies, Mike},
   journal={arXiv preprint},
   arxiv={2201.12151},
   year={2022},
-  month = {January},
+  month = {May},
   abbr = {tachella2022sampling.PNG},
   project = {equivariantimaging},
-  abstract = {In many real-world settings, only incomplete measurement data are available which can pose a problem for learning. Unsupervised learning of the signal model using a fixed incomplete measurement process is impossible in general, as there is no information in the nullspace of the measurement operator. This limitation can be overcome by using measurements from multiple operators. While this idea has been successfully applied in various applications, a precise characterization of the conditions for learning is still lacking. In this paper, we fill this gap by presenting necessary and sufficient conditions for learning the signal model which indicate the interplay between the number of distinct measurement operators G, the number of measurements per operator m, the dimension of the model k and the dimension of the signals n. In particular, we show that generically unsupervised learning is possible if each operator obtains at least m>k+n/G measurements. Our results are agnostic of the learning algorithm and have implications in a wide range of practical algorithms, from low-rank matrix recovery to deep neural networks.},
+  code = {https://github.com/edongdongchen/MOI},
+  abstract = {In many real-world inverse problems, only incomplete measurement data are available for training which can pose a problem for learning a reconstruction function. Indeed, unsupervised learning using a fixed incomplete measurement process is impossible in general, as there is no information in the nullspace of the measurement operator. This limitation can be overcome by using measurements from multiple operators. While this idea has been successfully applied in various applications, a precise characterization of the conditions for learning is still lacking. In this paper, we fill this gap by presenting necessary and sufficient conditions for learning the underlying signal model needed for reconstruction which indicate the interplay between the number of distinct measurement operators, the number of measurements per operator, the dimension of the model and the dimension of the signals. Furthermore, we propose a novel and conceptually simple unsupervised learning loss which only requires access to incomplete measurement data and achieves a performance on par with supervised learning when the sufficient condition is verified. We validate our theoretical bounds and demonstrate the advantages of the proposed unsupervised loss compared to previous methods via a series of experiments on various imaging inverse problems, such as accelerated magnetic resonance imaging, compressed sensing and image inpainting. },
 }
 
 @INPROCEEDINGS{sheehan2021detection,
