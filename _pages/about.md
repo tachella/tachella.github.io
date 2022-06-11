@@ -19,6 +19,6 @@ I am a [CNRS](https://www.cnrs.fr/) researcher, working at the [Sisyphe laborato
 
 Before, I did a postdoc in [Mike Davies group](https://scholar.google.com/citations?user=dwmfR3oAAAAJ&hl=en) at the [University of Edinburgh](https://www.ed.ac.uk/) (Edinburgh, UK). My research focused on unsupervised learning methods for solving inverse problems via deep neural networks, understanding the implicit bias of convolutional networks and sketching methods for single-photon lidar.
 
-I did my PhD student at [Heriot-Watt University](https://www.hw.ac.uk/) (Edinburgh, UK) and [TéSA lab](https://www.tesa.prd.fr/) (Toulouse, France) under the supervision of [Yoann Altmann](https://yoannaltmann.weebly.com/), [Jean-Yves Tourneret](http://tourneret.perso.enseeiht.fr/) and [Steve McLaughlin](https://scholar.google.co.uk/citations?user=z9wnHv8AAAAJ&hl=en). My thesis studied Bayesian methods for inverse problems, with a particular interest in low-photon imaging applications.
+I did my PhD at [Heriot-Watt University](https://www.hw.ac.uk/) (Edinburgh, UK) and [TéSA lab](https://www.tesa.prd.fr/) (Toulouse, France) under the supervision of [Yoann Altmann](https://yoannaltmann.weebly.com/), [Jean-Yves Tourneret](http://tourneret.perso.enseeiht.fr/) and [Steve McLaughlin](https://scholar.google.co.uk/citations?user=z9wnHv8AAAAJ&hl=en). My thesis studied Bayesian methods for inverse problems, with a particular interest in low-photon imaging applications.
 
 __Code__ related to my publications can be found [here]({{ site.baseurl }}{% link _pages/publications.md %}).
