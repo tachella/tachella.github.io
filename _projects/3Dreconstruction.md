@@ -10,7 +10,10 @@ category: work
 
 Single-photon light detection and ranging (lidar) has emerged as a prime candidate technology for depth imaging through challenging environments. This modality relies on constructing, for each pixel, a histogram of time delays between emitted light pulses and detected photon arrivals. The problem of estimating the number of imaged surfaces, their reflectivity and position becomes very challenging in the low-photon regime (which equates to short acquisition times) or relatively high background levels (i.e., strong ambient illumination). 
 
-<img src="assets/img/lidar_summary.png" alt="drawing" width="50%"/>
+
+{%- include figure_post.html 
+    path="assets/img/lidar_summary.png"
+    caption="Schematic of 3D reconstruction from lidar data" -%}
 
 In a general setting, a variable number of surfaces can be observed per imaged pixel. The majority of existing methods assume exactly one surface per pixel, simplifying the reconstruction problem so that standard image processing techniques can be easily applied. However, this assumption hinders practical three-dimensional (3D) imaging applications, being restricted to controlled indoor scenarios. Moreover, other existing methods that relax this assumption achieve worse reconstructions, suffering from long execution times and large memory requirements. 
 
