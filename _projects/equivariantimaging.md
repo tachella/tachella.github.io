@@ -31,7 +31,7 @@ T_gx = (f\circ A) (T_gx).
  which just relies on the fact that $$x'= T_gx$$ is another valid signal. Hence we can see beyond the range space of $$A$$, as we have an implicit access to multiple different operators  $$A_g = AT_g$$ for all possible transformations $$T_1,\dots,T_{G}$$. 
 
 {%- include figure_post.html 
-    path="assets/img/ei_iccv.PNG"
+    path="assets/img/ei_iccv.png"
     size="100%"
     caption="" -%}
 
