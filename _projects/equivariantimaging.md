@@ -48,13 +48,16 @@ We provide answers to these questions in {% cite tachella2022sampling %}:
 ### Necessary Conditions
 
 In order to learn from measurement data alone, we need that the set range spaces of virtual operators span the full ambient space $$\mathbb{R}^{n}$$, i.e.,
+
+$$
 \begin{equation}\label{eq:necessary}
 \text{rank}\left(\begin{bmatrix}
-AT_1 \\\\
- \vdots \\\\
+AT_1 \\
+ \vdots \\
   AT_G
 \end{bmatrix}\right) = n
 \end{equation}
+$$
 
 This condition requires that $$m \geq \max_j c_j/s_j$$ where $${s_j}$$ and $${c_j}$$ are the dimension and multiplicities of the irreducible representations of the group action. Most group symmetries (translations, reflections or rotations of a signal) appearing in practice have $$\max_j c_j/s_j=n/G$$. In this case, we need at least 
 \begin{equation}
