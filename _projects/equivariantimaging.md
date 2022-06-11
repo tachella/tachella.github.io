@@ -33,7 +33,7 @@ T_gx = (f\circ A) (T_gx).
 {%- include figure_post.html 
     path="assets/img/ei_iccv.png"
     size="100%"
-    caption="" -%}
+    caption="Learning to image from only measurements. Training an imaging network through just measurement consistency (MC) does not significantly improve the reconstruction over the simple pseudo-inverse. However, by enforcing invariance in the reconstructed image set, equivariant imaging (EI) performs almost as well as a fully supervised network. Top: sparse view CT reconstruction, Bottom: pixel inpainting. PSNR is shown in top right corner of the images" -%}
 
 {% cite chen2021equivariant %} shows that the invariance constraint on $$(f\circ A)$$ can be easily incorporated as an additional loss term when training a deep network. In {% cite chen2021robust %} we extended the unsupervised method to account for noise. The method builds an unsupervised loss using Stein's unbiased risk (SURE) estimator, which approximates the noiseless measurement consistency.
 
