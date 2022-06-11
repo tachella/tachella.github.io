@@ -12,7 +12,7 @@ Single-photon lidar is an emerging ranging technique that can obtain 3D informat
 {%- include figure_post.html 
     path="assets/img/timing_bins.png"
     size="60%"
-    caption="Fig. 1: Execution time of a 3D reconstruction algorithm as a function the number of non-zero bins in the collected time-of-arrival histograms" -%}
+    caption="<strong>Figure 1:<\strong> Execution time of a 3D reconstruction algorithm as a function the number of non-zero bins in the collected time-of-arrival histograms" -%}
 
 As single-photon lidar arrays get bigger and faster, the number of photons collected per histogram gets bigger, while there is an increased need for faster real-time frame rates. The volume of photon data that needs to be transmitted is ever-increasingly large, generating a <strong>data transfer bottleneck</strong>. Moreover, reconstruction algorithms are required to deal with ever-increasingly large and dense histograms, generating a <strong>computational bottleneck</strong>. So far, most attempts to alleviate these bottlenecks consisted in building coarser histograms. Despite reducing the amount of information to be transferred and processed, this approach sacrifices important depth resolution.
 
@@ -27,7 +27,7 @@ where $$t$$ denotes the time of arrival. The statistics can be <strong>computed 
 {%- include figure_post.html 
     path="assets/img/sheehan2021sketching2.gif"
     size="100%"
-    caption="Fig 2: Coarse binning and sketching" -%}
+    caption="<strong>Figure 1:<\strong> Coarse binning and sketching" -%}
 
 In {% cite sheehan2021detection %}, we propose detection methods (i.e., deciding whether there is a surface in a given pixel), which only require access to the sketched data and perform similarly to the other detection methods which require access to time-of-arrival histograms.
 
