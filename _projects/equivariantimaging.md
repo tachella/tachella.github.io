@@ -30,6 +30,11 @@ T_gx = (f\circ A) (T_gx).
  \end{equation}
  which just relies on the fact that $$x'= T_gx$$ is another valid signal. Hence we can see beyond the range space of $$A$$, as we have an implicit access to multiple different operators  $$A_g = AT_g$$ for all possible transformations $$T_1,\dots,T_{G}$$. 
 
+{%- include figure_post.html 
+    path="assets/img/ei_iccv.PNG"
+    size="100%"
+    caption="" -%}
+
 {% cite chen2021equivariant %} shows that the invariance constraint on $$(f\circ A)$$ can be easily incorporated as an additional loss term when training a deep network. In {% cite chen2021robust %} we extended the unsupervised method to account for noise. The method builds an unsupervised loss using Stein's unbiased risk (SURE) estimator, which approximates the noiseless measurement consistency.
 
 Experiments in {% cite chen2021equivariant %} and {% cite chen2021equivariant %}  show that for the computed tomography and inpaiting problems,  the equivariant learning approach (only having access to measurements $$y_i$$) performs as well as the fully supervised case i.e. having training pairs with ground-truth data $$(x_i,y_i)$$, by-passing the fundamental limitation of learning to solve inverse problems. 
