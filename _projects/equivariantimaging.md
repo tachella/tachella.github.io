@@ -51,11 +51,11 @@ In order to learn from measurement data alone, we need that the set range spaces
 
 $$
 \begin{equation}\label{eq:necessary}
-\text{rank}\left(\begin{bmatrix}
+\text{rank}\begin{bmatrix}
 AT_1 \\
  \vdots \\
   AT_G
-\end{bmatrix}\right) = n
+\end{bmatrix} = n
 \end{equation}
 $$
 
