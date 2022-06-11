@@ -1,5 +1,4 @@
 {%- assign path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".PNG" | remove: ".gif" | remove: ".tiff" -%}
-
 <figure>
   <picture>
     {% for i in site.imagemagick.widths -%}
