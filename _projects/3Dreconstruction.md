@@ -13,6 +13,7 @@ Single-photon light detection and ranging (lidar) has emerged as a prime candida
 
 {%- include figure_post.html 
     path="assets/img/lidar_summary.png"
+    size="100%"
     caption="Schematic of 3D reconstruction from lidar data" -%}
 
 In a general setting, a variable number of surfaces can be observed per imaged pixel. The majority of existing methods assume exactly one surface per pixel, simplifying the reconstruction problem so that standard image processing techniques can be easily applied. However, this assumption hinders practical three-dimensional (3D) imaging applications, being restricted to controlled indoor scenarios. Moreover, other existing methods that relax this assumption achieve worse reconstructions, suffering from long execution times and large memory requirements. 
