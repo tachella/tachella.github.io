@@ -11,7 +11,7 @@ nav: true
 {%- include figure_post.html 
     path="assets/img/eusipco_talk.jpg"
     size="100%"
-    caption="" -%}
+    -%}
 
 <!-- _pages/publications.md -->
 <div class="publications">
