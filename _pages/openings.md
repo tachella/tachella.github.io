@@ -10,7 +10,9 @@ nav: true
 {%- include figure_post.html 
     path="assets/img/lyon2.jpg"
     size="100%"
-    -%}
+-%}
+
+## Master Internships
 
 ## Master Internships
 
