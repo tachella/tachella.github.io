@@ -12,7 +12,7 @@ nav: true
     size="100%"
 -%}
 
-i
+.
 
 ### Master Internships
 
