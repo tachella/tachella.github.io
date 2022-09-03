@@ -7,11 +7,10 @@ description: Jobs and openings in ENS Lyon
 nav: true
 ---
 
-{%- if page.img -%}
-  {%- include figure.html 
-    path=page.img -%}
-{%- endif -%}
-
+{%- include figure_post.html 
+    path="assets/img/lyon2.jpg"
+    size="100%"
+    caption="" -%}
 
 # Master Internships
 

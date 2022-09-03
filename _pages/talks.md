@@ -8,10 +8,10 @@ years: [2022, 2021, 2020, 2019]
 nav: true
 ---
 
-{%- if page.img -%}
-  {%- include figure.html 
-    path=page.img -%}
-{%- endif -%}
+{%- include figure_post.html 
+    path="assets/img/eusipco_talk.jpg"
+    size="100%"
+    caption="" -%}
 
 <!-- _pages/publications.md -->
 <div class="publications">
