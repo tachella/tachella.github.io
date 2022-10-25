@@ -1,5 +1,19 @@
 ---
 ---
+
+@article{sheehan2022splines,
+  title={Spline Sketches: An Efficient Approach for Photon Counting Lidar},
+  author={Sheehan, Michael P and Tachella, Julian and Davies, Mike E},
+  journal={arxiv preprint},
+  year={2022},
+  arxiv = {2210.07314},
+  abbr = {sheehan2022splines.png},
+  project = {lidarsketching},
+  pdf = {https://arxiv.org/pdf/2210.07314},
+  abstract = {Photon counting lidar has become an invaluable tool for 3D depth imaging due to the fine-precision it can achieve over long ranges. However, high frame rate, high resolution lidar devices produce an enormous amount of time-of-flight (ToF) data which can cause a severe data processing bottleneck hindering the deployment of real-time systems. In this paper, an efficient photon counting approach is proposed that exploits the simplicity of piecewise polynomial splines to form a hardware-friendly compressed statistic, or a so-called spline sketch, of the ToF data without sacrificing the quality of the recovered image. As each piecewise polynomial spline is a simple function with limited support over the timing depth window, the spline sketch can be computed efficiently on-chip with minimal computational overhead. We show that a piecewise linear or quadratic spline sketch, requiring minimal on-chip arithmetic computation per photon detection, can reconstruct real-world depth images with negligible loss of resolution whilst achieving 95% compression compared to the full ToF data, as well as offering multi-peak detection performance. These contrast with previously proposed coarse binning histograms that suffer from a highly nonuniform accuracy across depth and can fail catastrophically when associated with bright reflectors. Further, by building range-walk correction into the proposed estimation algorithms, it is demonstrated that the spline sketches can be made robust to photon pile-up effects. The computational complexity of both the reconstruction and range walk correction algorithms scale only with the size of the spline sketch which is independent to both the photon count and temporal resolution of the lidar device.},
+  }
+
+
 @article{tachella2022equivariantDL,
   title={Imaging with Equivariant Deep Learning},
   author={Chen, Dongdong and Davies, Mike and Eehardt Matthias and Schonlieb Carola-Bibiane and Sherry Ferdia and Tachella, Julian and },
