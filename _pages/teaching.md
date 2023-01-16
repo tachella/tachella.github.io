@@ -3,7 +3,8 @@ layout: page
 permalink: /teaching/
 title: Teaching
 img: 
-description: 
+years: [2023, 2022]
+description: Taught SP and ML courses
 nav: true
 ---
 
