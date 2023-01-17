@@ -39,19 +39,19 @@
   abbr = {singlepixel.png},
   pdf = {http://gretsi.fr/data/colloque/pdf/2022_tachella968.pdf},
   project = {equivariantimaging},
-  abstract = {Solving a linear inverse problem requires knowledge about the underlying signal model. In many applications, this model is a priori unknown and has to be learned from data. However, it is impossible to learn the model using observations obtained via a single incomplete measurement operator, as there is no information outside the range of the inverse operator, resulting in a chicken-and-egg problem: to learn the model we need reconstructed signals, but to reconstruct the signals we need to know the model. Two ways to overcome this limitation are using multiple measurement operators or assuming that the signal model is invariant to a certain group action. In this paper, we present necessary and sufficient sampling conditions for learning the signal model from partial measurements which only depend on the dimension of the model, and the number of operators or properties of the group action that the model is invariant to. As our results are agnostic of the learning algorithm, they shed light into the fundamental limitations of learning from incomplete data and have implications in a wide range set of practical algorithms, such as dictionary learning, matrix completion and deep neural networks.},
+  abstract = {In recent years, learning-based approaches have obtained state-of-the-art performance in multiple imaging inverse problems ranging from medical imaging to computational photography. These methods generally require pairs of signals and associated measurements for training. However, in various imaging problems, we usually only have access to compressed measurements of the underlying signals, hindering this learning-based approach. Learning from measurement data only is impossible in general, as the compressed observations do not contain information in the nullspace of the forward sensing operator. The recent equivariant imaging framework overcomes this limitation by exploiting the invariance to transformations (translations, rotations, etc.) present in natural signals. In this paper, we leverage this novel unsupervised learning framework for reconstructing single-pixel imaging data from compressed measurements alone. A series of experiments show that the proposed method performs comparably to the standard supervised approach.},
 }
 
 @article{tachella2022sampling,
-  title={Sampling Theorems for Unsupervised Learning in Linear Inverse Problems},
+  title={Sensing Theorems for Unsupervised Learning in Linear Inverse Problems},
   author={Tachella, Julian and Chen, Dongdong and Davies, Mike},
-  journal={arXiv preprint},
+  journal={To Appear in Journal of Machine Learning Research (JMLR)},
   arxiv={2203.12513},
   year={2022},
   month = {Mar},
   abbr = {m_regimes_website.png},
   project = {equivariantimaging},
-  abstract = {Solving a linear inverse problem requires knowledge about the underlying signal model. In many applications, this model is a priori unknown and has to be learned from data. However, it is impossible to learn the model using observations obtained via a single incomplete measurement operator, as there is no information outside the range of the inverse operator, resulting in a chicken-and-egg problem: to learn the model we need reconstructed signals, but to reconstruct the signals we need to know the model. Two ways to overcome this limitation are using multiple measurement operators or assuming that the signal model is invariant to a certain group action. In this paper, we present necessary and sufficient sampling conditions for learning the signal model from partial measurements which only depend on the dimension of the model, and the number of operators or properties of the group action that the model is invariant to. As our results are agnostic of the learning algorithm, they shed light into the fundamental limitations of learning from incomplete data and have implications in a wide range set of practical algorithms, such as dictionary learning, matrix completion and deep neural networks.},
+  abstract = {Solving a linear inverse problem requires knowledge about the underlying signal model. In many applications, this model is a priori unknown and has to be learned from data. However, it is impossible to learn the model using observations obtained via a single incomplete measurement operator, as there is no information outside the range of the inverse operator, resulting in a chicken-and-egg problem: to learn the model we need reconstructed signals, but to reconstruct the signals we need to know the model. Two ways to overcome this limitation are using multiple measurement operators or assuming that the signal model is invariant to a certain group action. In this paper, we present necessary and sufficient sensing conditions for learning the signal model from partial measurements which only depend on the dimension of the model, and the number of operators or properties of the group action that the model is invariant to. As our results are agnostic of the learning algorithm, they shed light into the fundamental limitations of learning from incomplete data and have implications in a wide range set of practical algorithms, such as dictionary learning, matrix completion and deep neural networks.},
 }
 
 
@@ -103,10 +103,10 @@
 @article{chen2021robust,
   title={Robust Equivariant Imaging: a fully unsupervised framework for learning to image from noisy and partial measurements},
   author={Chen, Dongdong and Tachella, Julian and Davies, Mike E},
-  journal={Accepted at CVPR'22},
-  year={2021},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022},
   arxiv={2111.12855},
-  month = {December},
+  month = {Jun},
   abbr = {chen2021robust.PNG},
   project = {equivariantimaging},
   video = {https://youtu.be/27iWnWEbQvA},

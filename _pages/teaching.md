@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 img: 
 years: [2023, 2022]
-description: Taught SP and ML courses
+description: Master level signal processing and machine learning courses.
 nav: true
 ---
 
