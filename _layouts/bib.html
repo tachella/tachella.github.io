@@ -128,9 +128,9 @@
           {%- endif %}
           {%- if entry.notes %}
             {% if entry.notes contains '://' -%}
-            <a href="{{ entry.notes }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+            <a href="{{ entry.notes }}" class="btn btn-sm z-depth-0" role="button">Notes</a>
             {%- else -%}
-            <a href="{{ entry.notes | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+            <a href="{{ entry.notes | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Notes</a>
             {%- endif %}
           {%- endif %}
           {%- if entry.poster %}
