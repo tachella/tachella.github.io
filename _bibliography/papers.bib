@@ -10,12 +10,11 @@
   pages={134--147},
   abbr = {imagingequiv.png},
   pdf = {https://ieeexplore.ieee.org/abstract/document/10004796},
-  arxiv = {https://arxiv.org/abs/2209.01725},
+  arxiv = {2209.01725},
   project = {equivariantimaging},
   abstract = {From early image processing to modern computational imaging, successful models and algorithms have relied on a fundamental property of natural signals: symmetry . Here symmetry refers to the invariance property of signal sets to transformations, such as translation, rotation, or scaling. Symmetry can also be incorporated into deep neural networks (DNNs) in the form of equivariance, allowing for more data-efficient learning. While there have been important advances in the design of end-to-end equivariant networks for image classification in recent years, computational imaging introduces unique challenges for equivariant network solutions since we typically only observe the image through some noisy ill-conditioned forward operator that itself may not be equivariant. We review the emerging field of equivariant imaging (EI) and show how it can provide improved generalization and new imaging opportunities. Along the way, we show the interplay between the acquisition physics and group actions and links to iterative reconstruction, blind compressed sensing, and self-supervised learning.},
   year={2023},
 }
-
 
 
 @article{sheehan2022splines,
@@ -46,10 +45,13 @@
 @article{tachella2022sampling,
   title={Sensing Theorems for Unsupervised Learning in Linear Inverse Problems},
   author={Tachella, Julian and Chen, Dongdong and Davies, Mike},
-  journal={To Appear in Journal of Machine Learning Research (JMLR)},
+  journal={Journal of Machine Learning Research (JMLR)},
   arxiv={2203.12513},
-  year={2022},
-  month = {Mar},
+  year={2023},  
+  volume  = {24},
+  number  = {39},
+  pages   = {1--45},
+  month = {Jan},
   abbr = {m_regimes_website.png},
   project = {equivariantimaging},
   abstract = {Solving a linear inverse problem requires knowledge about the underlying signal model. In many applications, this model is a priori unknown and has to be learned from data. However, it is impossible to learn the model using observations obtained via a single incomplete measurement operator, as there is no information outside the range of the inverse operator, resulting in a chicken-and-egg problem: to learn the model we need reconstructed signals, but to reconstruct the signals we need to know the model. Two ways to overcome this limitation are using multiple measurement operators or assuming that the signal model is invariant to a certain group action. In this paper, we present necessary and sufficient sensing conditions for learning the signal model from partial measurements which only depend on the dimension of the model, and the number of operators or properties of the group action that the model is invariant to. As our results are agnostic of the learning algorithm, they shed light into the fundamental limitations of learning from incomplete data and have implications in a wide range set of practical algorithms, such as dictionary learning, matrix completion and deep neural networks.},
