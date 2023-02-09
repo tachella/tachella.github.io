@@ -133,6 +133,13 @@
             <a href="{{ entry.notes | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Notes</a>
             {%- endif %}
           {%- endif %}
+          {%- if entry.codes %}
+            {% if entry.codes contains '://' -%}
+            <a href="{{ entry.codes }}" class="btn btn-sm z-depth-0" role="button">Notes</a>
+            {%- else -%}
+            <a href="{{ entry.codes | prepend: '/assets/codes/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Notes</a>
+            {%- endif %}
+          {%- endif %}
           {%- if entry.poster %}
             {% if entry.poster contains '://' -%}
             <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
