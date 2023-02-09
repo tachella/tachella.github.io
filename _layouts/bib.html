@@ -135,7 +135,7 @@
           {%- endif %}
           {%- if entry.codes %}
             {% if entry.codes contains '://' -%}
-            <a href="{{ entry.codes }}" class="btn btn-sm z-depth-0" role="button">Notes</a>
+            <a href="{{ entry.codes }}" class="btn btn-sm z-depth-0" role="button">Codes</a>
             {%- else -%}
             <a href="{{ entry.codes | prepend: '/assets/codes/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Notes</a>
             {%- endif %}
