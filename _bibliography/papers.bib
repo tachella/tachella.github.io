@@ -1,6 +1,32 @@
 ---
 ---
 
+
+@article{tachella2023onebit,
+  title={Learning to Reconstruct Signals from Binary Measurements},
+  author={Tachella, Julian and Jacques, Laurent},
+  journal={ArXiv preprint},
+  year={2023},
+  arxiv = {2303.08691},
+  abbr = {tachella2023onebit.gif},
+  project = {equivariantimaging},
+  pdf = {https://arxiv.org/abs/2303.08691},
+  abstract = {Recent advances in unsupervised learning have highlighted the possibility of learning to reconstruct signals from noisy and incomplete linear measurements alone. These methods play a key role in medical and scientific imaging and sensing, where ground truth data is often scarce or difficult to obtain. However, in practice, measurements are not only noisy and incomplete but also quantized. Here we explore the extreme case of learning from binary observations and provide necessary and sufficient conditions on the number of measurements required for identifying a set of signals from incomplete binary data. Our results are complementary to existing bounds on signal recovery from binary measurements. Furthermore, we introduce a novel self-supervised learning approach, which we name SSBM, that only requires binary data for training. We demonstrate in a series of experiments with real datasets that SSBM performs on par with supervised learning and outperforms sparse reconstruction methods with a fixed wavelet basis by a large margin.}
+  }
+
+
+@inproceedings{sheehan2023splines,
+  title={Spline Sketches: An Efficient Approach for Photon Counting Lidar},
+  author={Sheehan, Michael P and Tachella, Julian and Davies, Mike E},
+  booktitle={ICASSP'23},
+  year={2023},
+  arxiv = {2210.07314},
+  abbr = {sheehan2022splines.png},
+  project = {lidarsketching},
+  abstract = {Photon counting lidar has become an invaluable tool for 3D depth imaging due to the fine-precision it can achieve over long ranges. However, high frame rate, high resolution lidar devices produce an enormous amount of time-of-flight (ToF) data which can cause a severe data processing bottleneck hindering the deployment of real-time systems. In this paper, an efficient photon counting approach is proposed that exploits the simplicity of piecewise polynomial splines to form a hardware-friendly compressed statistic, or a so-called spline sketch, of the ToF data without sacrificing the quality of the recovered image. As each piecewise polynomial spline is a simple function with limited support over the timing depth window, the spline sketch can be computed efficiently on-chip with minimal computational overhead. We show that a piecewise linear or quadratic spline sketch, requiring minimal on-chip arithmetic computation per photon detection, can reconstruct real-world depth images with negligible loss of resolution whilst achieving 95% compression compared to the full ToF data, as well as offering multi-peak detection performance. These contrast with previously proposed coarse binning histograms that suffer from a highly nonuniform accuracy across depth and can fail catastrophically when associated with bright reflectors. Further, by building range-walk correction into the proposed estimation algorithms, it is demonstrated that the spline sketches can be made robust to photon pile-up effects. The computational complexity of both the reconstruction and range walk correction algorithms scale only with the size of the spline sketch which is independent to both the photon count and temporal resolution of the lidar device.},
+  }
+
+
 @article{tachella2023spm,
   title={Imaging with Equivariant Deep Learning},
   author={Chen, Dongdong and Davies, Mike and Ehrhardt, Matthias J and Sch{\"o}nlieb, Carola-Bibiane and Sherry, Ferdia and Tachella, Julian},
@@ -20,7 +46,7 @@
 @article{sheehan2022splines,
   title={Spline Sketches: An Efficient Approach for Photon Counting Lidar},
   author={Sheehan, Michael P and Tachella, Julian and Davies, Mike E},
-  journal={arxiv preprint},
+  journal={ArXiv preprint},
   year={2022},
   arxiv = {2210.07314},
   abbr = {sheehan2022splines.png},
