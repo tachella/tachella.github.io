@@ -14,9 +14,10 @@ nav: true
 
 We are looking for highly motivated students who want to do cutting-edge research in machine learning and signal processing in a stimulating environent at ENS Lyon.
 
-### PhD positions
+### Postdoc positions
 
-[Jean-Yves Tourneret](https://perso.tesa.prd.fr/jyt/index.html) and myself are currently looking for candidates for a PhD position based at the TéSA lab in Toulouse, in collaboration with the [CNES](https://cnes.fr/en). Please find the details about the project [here](https://recrutement.cnes.fr/fr/annonce/2038269-23-307-registration-and-fusion-of-3d-point-clouds-31500-toulouse). 
+
+I am looking for a postdoc as part of the UNLIP project [will be funded by the ANR](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/). The project will investigate new methods for self-supervised learning in non-linear imaging problems. Do not hesitate to contact me if you are interested in the position!
 
 
 
