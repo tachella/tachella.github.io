@@ -2,15 +2,25 @@
 ---
 
 
+@article{tachella2023equivariant,
+  title={Equivariant Bootstrapping for Uncertainty Quantification in Imaging Inverse Problems},
+  author={Tachella, Julian and Pereyra, Marcelo},
+  journal={arXiv preprint arXiv:2310.11838},
+  year={2023},
+  arxiv={2310.11838},
+  abbr = {tachella2023equivariant.pdf},
+  abstract = {Scientific imaging problems are often severely ill-posed, and hence have significant intrinsic uncertainty. Accurately quantifying the uncertainty in the solutions to such problems is therefore critical for the rigorous interpretation of experimental results as well as for reliably using the reconstructed images as scientific evidence. Unfortunately, existing imaging methods are unable to quantify the uncertainty in the reconstructed images in a manner that is robust to experiment replications. This paper presents a new uncertainty quantification methodology based on an equivariant formulation of the parametric bootstrap algorithm that leverages symmetries and invariance properties commonly encountered in imaging problems. Additionally, the proposed methodology is general and can be easily applied with any image reconstruction technique, including unsupervised training strategies that can be trained from observed data alone, thus enabling uncertainty quantification in situations where there is no ground truth data available. We demonstrate the proposed approach with a series of numerical experiments and through comparisons with alternative uncertainty quantification strategies from the state-of-the-art, such as Bayesian strategies involving score-based diffusion models and Langevin samplers. In all our experiments, the proposed method delivers remarkably accurate high-dimensional confidence regions and outperforms the competing approaches in terms of estimation accuracy, uncertainty quantification accuracy, and computing time.}
+}
+
 @article{tachella2023onebit,
   title={Learning to Reconstruct Signals from Binary Measurements},
   author={Tachella, Julian and Jacques, Laurent},
-  journal={ArXiv preprint},
+  journal={Transactions of Machine Learning Research (TMLR). Featured Certification.},
   year={2023},
   arxiv = {2303.08691},
   abbr = {tachella2023onebit.gif},
   project = {equivariantimaging},
-  pdf = {https://arxiv.org/abs/2303.08691},
+  pdf = {https://openreview.net/forum?id=KTHNoaCOYZ},
   abstract = {Recent advances in unsupervised learning have highlighted the possibility of learning to reconstruct signals from noisy and incomplete linear measurements alone. These methods play a key role in medical and scientific imaging and sensing, where ground truth data is often scarce or difficult to obtain. However, in practice, measurements are not only noisy and incomplete but also quantized. Here we explore the extreme case of learning from binary observations and provide necessary and sufficient conditions on the number of measurements required for identifying a set of signals from incomplete binary data. Our results are complementary to existing bounds on signal recovery from binary measurements. Furthermore, we introduce a novel self-supervised learning approach, which we name SSBM, that only requires binary data for training. We demonstrate in a series of experiments with real datasets that SSBM performs on par with supervised learning and outperforms sparse reconstruction methods with a fixed wavelet basis by a large margin.}
   }
 
