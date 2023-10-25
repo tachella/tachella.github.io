@@ -8,7 +8,8 @@
   journal={arXiv preprint arXiv:2310.11838},
   year={2023},
   arxiv={2310.11838},
-  abbr = {tachella2023equivariant.pdf},
+  abbr = {tachella2023equivariant.png},
+  selected={true},
   abstract = {Scientific imaging problems are often severely ill-posed, and hence have significant intrinsic uncertainty. Accurately quantifying the uncertainty in the solutions to such problems is therefore critical for the rigorous interpretation of experimental results as well as for reliably using the reconstructed images as scientific evidence. Unfortunately, existing imaging methods are unable to quantify the uncertainty in the reconstructed images in a manner that is robust to experiment replications. This paper presents a new uncertainty quantification methodology based on an equivariant formulation of the parametric bootstrap algorithm that leverages symmetries and invariance properties commonly encountered in imaging problems. Additionally, the proposed methodology is general and can be easily applied with any image reconstruction technique, including unsupervised training strategies that can be trained from observed data alone, thus enabling uncertainty quantification in situations where there is no ground truth data available. We demonstrate the proposed approach with a series of numerical experiments and through comparisons with alternative uncertainty quantification strategies from the state-of-the-art, such as Bayesian strategies involving score-based diffusion models and Langevin samplers. In all our experiments, the proposed method delivers remarkably accurate high-dimensional confidence regions and outperforms the competing approaches in terms of estimation accuracy, uncertainty quantification accuracy, and computing time.}
 }
 
@@ -48,6 +49,7 @@
   pdf = {https://ieeexplore.ieee.org/abstract/document/10004796},
   arxiv = {2209.01725},
   project = {equivariantimaging},
+  selected={true},
   abstract = {From early image processing to modern computational imaging, successful models and algorithms have relied on a fundamental property of natural signals: symmetry . Here symmetry refers to the invariance property of signal sets to transformations, such as translation, rotation, or scaling. Symmetry can also be incorporated into deep neural networks (DNNs) in the form of equivariance, allowing for more data-efficient learning. While there have been important advances in the design of end-to-end equivariant networks for image classification in recent years, computational imaging introduces unique challenges for equivariant network solutions since we typically only observe the image through some noisy ill-conditioned forward operator that itself may not be equivariant. We review the emerging field of equivariant imaging (EI) and show how it can provide improved generalization and new imaging opportunities. Along the way, we show the interplay between the acquisition physics and group actions and links to iterative reconstruction, blind compressed sensing, and self-supervised learning.},
   year={2023},
 }
@@ -90,6 +92,7 @@
   month = {Jan},
   pdf = {http://jmlr.org/papers/v24/22-0315.html},
   abbr = {m_regimes_website.png},
+  selected={true},
   project = {equivariantimaging},
   abstract = {Solving a linear inverse problem requires knowledge about the underlying signal model. In many applications, this model is a priori unknown and has to be learned from data. However, it is impossible to learn the model using observations obtained via a single incomplete measurement operator, as there is no information outside the range of the inverse operator, resulting in a chicken-and-egg problem: to learn the model we need reconstructed signals, but to reconstruct the signals we need to know the model. Two ways to overcome this limitation are using multiple measurement operators or assuming that the signal model is invariant to a certain group action. In this paper, we present necessary and sufficient sensing conditions for learning the signal model from partial measurements which only depend on the dimension of the model, and the number of operators or properties of the group action that the model is invariant to. As our results are agnostic of the learning algorithm, they shed light into the fundamental limitations of learning from incomplete data and have implications in a wide range set of practical algorithms, such as dictionary learning, matrix completion and deep neural networks.},
 }
@@ -166,7 +169,6 @@
   abbr = {chen2021equivariant.jpg},
   code = {https://github.com/edongdongchen/EI},
   video = {https://youtu.be/wGxW5bcCdxo},
-  selected={true},
   project = {equivariantimaging},
   abstract = {In various imaging problems, we only have access to compressed measurements of the underlying signals, hindering most learning-based strategies which usually require pairs of signals and associated measurements for training. Learning only from compressed measurements is impossible in general, as the compressed observations do not contain information outside the range of the forward sensing operator. We propose a new end-to-end self-supervised framework that overcomes this limitation by exploiting the equivariances present in natural signals. Our proposed learning strategy performs as well as fully supervised methods. Experiments demonstrate the potential of this framework on inverse problems including sparse-view X-ray computed tomography on real clinical data and image inpainting on natural images.},
 }
@@ -198,7 +200,6 @@
 	code = {https://gitlab.com/Tachella/neural_tangent_denoiser},
     pdf = {https://openaccess.thecvf.com/content/CVPR2021/papers/Tachella_The_Neural_Tangent_Link_Between_CNN_Denoisers_and_Non-Local_Filters_CVPR_2021_paper.pdf},
     sup = {https://openaccess.thecvf.com/content/CVPR2021/supplemental/Tachella_The_Neural_Tangent_CVPR_2021_supplemental.pdf},
-	selected={true},
 	blog = {2020/ntd},
 	video = {https://youtu.be/vLxzxp2boyY},
 	abstract = {Convolutional Neural Networks (CNNs) are now a well-established tool for solving computational imaging problems. Modern CNN-based algorithms obtain state-of-the-art performance in diverse image restoration problems. Furthermore, it has been recently shown that, despite being highly overparameterized, networks trained with a single corrupted image can still perform as well as fully trained networks. We introduce a formal link between such networks through their neural tangent kernel (NTK), and well-known non-local filtering techniques, such as non-local means or BM3D. The filtering function associated with a given network architecture can be obtained in closed form without need to train the network, being fully characterized by the random initialization of the network weights. While the NTK theory accurately predicts the filter associated with networks trained using standard gradient descent, our analysis shows that it falls short to explain the behaviour of networks trained using the popular Adam optimizer. The latter achieves a larger change of weights in hidden layers, adapting the non-local filtering function during training. We evaluate our findings via extensive image denoising experiments.},
@@ -302,7 +303,6 @@
 	abbr = {tachella2019rt3d.gif},
 	code = {https://gitlab.com/Tachella/real-time-single-photon-lidar},
 	pdf = {https://www.nature.com/articles/s41467-019-12943-7.pdf},
- 	selected={true},
   project = {3Dreconstruction},
 	video = {https://youtu.be/PzCcAoypUfM},
 }
