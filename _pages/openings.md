@@ -27,9 +27,9 @@ We have two open postdoc positions:
 
 We have two master open projects at ENS Lyon for Spring 2024 (with possible continuation into a PhD thesis):
 
-- Emulation of subglacial lake/ocean dynamics with machine learning (with Louis Couston). See the offer details [here](/assets/pdf/internship-offer-sp2024-AI-for-climate-tachella-couston.pdf).
+- Emulation of subglacial lake/ocean dynamics with machine learning (with [Louis Couston](https://louiscouston.github.io/)). See the offer details [here](/assets/pdf/internship-offer-sp2024-AI-for-climate-tachella-couston.pdf).
 
-- Self-Supervised Learning for Astronomical Imaging (with Loic Denis). See the offer details [here](/assets/pdf/internship-offer-SelfSupLearning-Astro-Tachella-Denis.pdf).
+- Self-Supervised Learning for Astronomical Imaging (with [Loic Denis](https://perso.univ-st-etienne.fr/deniloic/)). See the offer details [here](/assets/pdf/internship-offer-SelfSupLearning-Astro-Tachella-Denis.pdf).
 
 
  If you are interested in doing your master internship (M2) with us, send me an email to julian.tachella@cnrs.fr explaining the topics you would like to work on, your CV and a transcript of grades. To get an idea about our current research projects, please check out the [recent papers](https://scholar.google.co.uk/citations?user=u_hH-fUAAAAJ&hl=en). Projects usually involve both theory and applied work and require some knowledge in statistics, machine learning, signal processing and optimization.
