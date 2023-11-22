@@ -11,7 +11,7 @@ nav: true
 #### PhD Students
 
 - [Nov 23 - ...] Victor Sechaud (with P. Abry)
-- [Nov 23 - ...] Maurine Bouzied (with J.-Y. Tourneret)
+- [Nov 23 - ...] Maurine Bouzeid (with J.-Y. Tourneret)
 
 #### Master Interns
 
