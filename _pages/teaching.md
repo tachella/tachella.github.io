@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: Teaching
 img: 
-years: [2023, 2022]
+years: [2024, 2023, 2022]
 description: Master level signal processing and machine learning courses.
 nav: true
 ---
