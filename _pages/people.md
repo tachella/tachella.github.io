@@ -18,9 +18,12 @@ nav: true
 #### Master Interns
 
 - [Apr 23 - ...] Jeremy Scanvic (with P. Abry and M. Davies)
-- [Apr 23 - Aug 23] Victor Sechaud (with P. Abry)
-- [Apr 22 - Aug 22] Bastian Payre (with N. Pustelnik)
+- [Feb 24 - ...] Julie Limonet (with L. Couston)
+- [Feb 24 - ...] Zhiyuan Hu (with J. Dong)
 
+### Alumni
+
+- [Apr 22 - Aug 22] Bastian Payre (with N. Pustelnik). Master intern
 
 ### Colaborators
 

@@ -24,9 +24,7 @@ We have one open postdoc position:
 ### Master Internships
 
 
-We have two master open projects at ENS Lyon for Spring 2024 (with possible continuation into a PhD thesis):
-
-- Emulation of subglacial lake/ocean dynamics with machine learning (with [Louis Couston](https://louiscouston.github.io/)). See the offer details [here](/assets/pdf/internship-offer-sp2024-AI-for-climate-tachella-couston.pdf).
+We have a master open projects at ENS Lyon for Spring 2024 (with possible continuation into a PhD thesis):
 
 - Self-Supervised Learning for Astronomical Imaging (with [Loic Denis](https://perso.univ-st-etienne.fr/deniloic/)). See the offer details [here](/assets/pdf/internship-offer-SelfSupLearning-Astro-Tachella-Denis.pdf).
 
