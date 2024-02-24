@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://tachella.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tachella.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-24T14:18:28+00:00</updated><id>https://tachella.github.io/feed.xml</id><title type="html">blank</title><subtitle>signal processing &gt;</subtitle><entry><title type="html">Unsupervised Learning with Equivariant Imaging</title><link href="https://tachella.github.io/blog/2021/equivariant/" rel="alternate" type="text/html" title="Unsupervised Learning with Equivariant Imaging" /><published>2021-10-01T15:12:00+00:00</published><updated>2021-10-01T15:12:00+00:00</updated><id>https://tachella.github.io/blog/2021/equivariant</id><content type="html" xml:base="https://tachella.github.io/blog/2021/equivariant/"><![CDATA[<p>Inverse problems are ubiquitous in signal and image processing. In most applications, we need to reconstruct an underlying signal \(x\in\mathbb{R}^{n}\), from some measurements \(y\in\mathbb{R}^{m}\), that is, invert the forward measurement process, 
+\begin{equation}
+y = Ax+n
+\end{equation}
+ where \(n\) represents some noise and \(A\) is the forward operator. Due to the ill-posed nature of \(A\) (we generally have \(m&lt;n\)) and noise, there are multiple possible solutions \(x\) for a given \(y\). Fortunately, the set of plausible (natural) signals \(x\) lie in a small low-dimensional set \(\mathcal{X}\) of the whole of \(\mathbb{R}^{n}\), so we can have a unique \(x\) for a given \(y\).</p>
+
+<p>The traditional approach is to build a mathematical model to describe \(\mathcal{X}\) leveraging some prior knowledge about the underlying signals (e.g. natural images can be described as piecewise smooth). However, this a hard task which is problem-dependent and it is generally a loose description of the true \(\mathcal{X}\).</p>
+
+<p>In recent years, an alternative approach is to learn inverse mapping from \(y\mapsto x\) directly from training data, bypassing the need to design a prior model. Fuelled by the powerful learning bias of deep convolutional neural networks (interest readers can have a look at my previous post about understanding this implicit bias), the goal is to learn a function \(x=f(y)\) from training pairs \((x_i,y_i)\). The fundamental limitation of this approach is that in many real world applications we can only access \(y\). Training only with the \(y_i\) (enforcing measurement consistency) accounts to finding an \(f\) such that \(y=A f(y)\). Unfortunately this is doomed to fail, as there are infinite possible functions \(f\) that can fit the measurements perfectly well! This is because any \(f\) can output any value in the nullspace of \(A\) and still achieve measurement consistency. In other words, this fundamental limitation is a chicken-and-egg problem:  we cannot learn to solve an inverse problem without solving it first to obtain the ground-truth training data!</p>
+
+<p>In <a class="citation" href="#chen2021equivariant">(Chen et al., 2021)</a> and <a class="citation" href="#chen2021robust">(Chen et al., 2022)</a>, we show that this problem can be overcome by adding a small assumption to the underlying set of signals \(\mathcal{X}\): invariance. It is well-known that most natural signals posses some kind of invariance. For example, images are generally invariant to shifts or rotations. Hence, the whole sensing process \(x = (f \circ A) (x)\) is necessarily an equivariant function, that is, given a transformation \(T_g\) (e.g. a shift), we have that 
+\begin{equation}
+T_gx = (f\circ A) (T_gx).
+\end{equation}
+ The invariance gives us information of the nullspace of A, which boils down to the following observation: 
+ \begin{equation}
+ y=Ax = AT_g x’  = A_g x’
+ \end{equation}
+ which just relies on the fact that \(x'= T_gx\) is another valid signal. Hence we can see beyond the range space of \(A\), as we have an implicit access to multiple different operators  \(A_g = AT_g\) for all possible transformations \(T_1,\dots,T_{G}\).</p>
+
+<p>We show that this invariance constraint on \((f\circ A)\) can be easily incorporated as an additional loss term when training a deep network. Our experiments show that for the computed tomography and inpaiting problems,  the equivariant learning approach (only having access to measurements \(y_i\)) performs as well as the fully supervised case i.e. having training pairs with ground-truth data \((x_i,y_i)\), by-passing the fundamental limitation of learning to solve inverse problems.</p>
+
+<h3 id="related-papers">Related papers</h3>
+<div class="publications">
+<ol class="bibliography"><li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 container_img"><div class="card hooverable">
+            <img class="card-img-top" src="https://tachella.github.io/assets/img/chen2021equivariant.jpg" />
+          </div></div>
+
+        <!-- Entry bib key -->
+        <div id="chen2021equivariant" class="col-sm-8">
+        
+          <!-- Title -->  
+          <div class="title">Equivariant Imaging: Learning Beyond the Range Space</div>
+          <!-- Author -->
+          <div class="author">Chen, Dongdong,&nbsp;
+                  <em>Tachella, Julian</em>,&nbsp;and Davies, Mike E
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)</em> Mar 2021
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Chen_Equivariant_Imaging_Learning_Beyond_the_Range_Space_ICCV_2021_paper.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://youtu.be/wGxW5bcCdxo" class="btn btn-sm z-depth-0" role="button">Video</a>
+            <a href="/projects/equivariantimaging" class="btn btn-sm z-depth-0" role="button">Project</a>
+            <a href="https://github.com/edongdongchen/EI" class="btn btn-sm z-depth-0" role="button">Code</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In various imaging problems, we only have access to compressed measurements of the underlying signals, hindering most learning-based strategies which usually require pairs of signals and associated measurements for training. Learning only from compressed measurements is impossible in general, as the compressed observations do not contain information outside the range of the forward sensing operator. We propose a new end-to-end self-supervised framework that overcomes this limitation by exploiting the equivariances present in natural signals. Our proposed learning strategy performs as well as fully supervised methods. Experiments demonstrate the potential of this framework on inverse problems including sparse-view X-ray computed tomography on real clinical data and image inpainting on natural images.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 container_img"><div class="card hooverable">
+            <img class="card-img-top" src="https://tachella.github.io/assets/img/chen2021robust.PNG" />
+          </div></div>
+
+        <!-- Entry bib key -->
+        <div id="chen2021robust" class="col-sm-8">
+        
+          <!-- Title -->  
+          <div class="title">Robust Equivariant Imaging: a fully unsupervised framework for learning to image from noisy and partial measurements</div>
+          <!-- Author -->
+          <div class="author">Chen, Dongdong,&nbsp;
+                  <em>Tachella, Julian</em>,&nbsp;and Davies, Mike E
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em> Jun 2022
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2111.12855" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+            <a href="https://youtu.be/27iWnWEbQvA" class="btn btn-sm z-depth-0" role="button">Video</a>
+            <a href="/projects/equivariantimaging" class="btn btn-sm z-depth-0" role="button">Project</a>
+            <a href="https://github.com/edongdongchen/REI" class="btn btn-sm z-depth-0" role="button">Code</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Deep networks provide state-of-the-art performance in multiple imaging inverse problems ranging from medical imaging to computational photography. However, most existing networks are trained with clean signals which are often hard or impossible to obtain. Equivariant imaging (EI) is a recent self-supervised learning framework that exploits the group invariance present in signal distributions to learn a reconstruction function from partial measurement data alone. While EI results are impressive, its performance degrades with increasing noise. In this paper, we propose a Robust Equivariant Imaging (REI) framework which can learn to image from noisy partial measurements alone. The proposed method uses Stein’s Unbiased Risk Estimator (SURE) to obtain a fully unsupervised training loss that is robust to noise. We show that REI leads to considerable performance gains on linear and nonlinear inverse problems, thereby paving the way for robust unsupervised imaging with deep networks.</p>
+          </div>
+        </div>
+      </div>
+</li></ol>
+</div>]]></content><author><name></name></author><category term="deep-learning" /><category term="formatting" /><category term="math" /><summary type="html"><![CDATA[an introduction to unsupervised learning to solve inverse problems]]></summary></entry><entry><title type="html">Sketching for single-photon lidar</title><link href="https://tachella.github.io/blog/2021/sketching/" rel="alternate" type="text/html" title="Sketching for single-photon lidar" /><published>2021-07-04T17:39:00+00:00</published><updated>2021-07-04T17:39:00+00:00</updated><id>https://tachella.github.io/blog/2021/sketching</id><content type="html" xml:base="https://tachella.github.io/blog/2021/sketching/"><![CDATA[<p>Single-photon lidar is an emerging ranging technique that can obtain 3D information at kilometre distance with centimetre precision, and has important applications in self-driving cars, forest canopy monitoring, non-line-of-sight imaging and more. This modality consists of contracting a histogram of time-of-arrival of individual photons per pixel. For each object in the line-of-sight of the device there is a peak in the histogram. These peaks are found by a 3D reconstruction algorithm that takes into account the Poisson statistics of the photon-count data, while promoting spatial smoothness in the reconstructed point clouds. In a previous post, I presented an algorithm that can find multiple peaks per pixel in a matter of milliseconds even in challenging very long range scenarios with high background noise. As the algorithm needs to process the histogram data, the <strong>reconstruction time</strong> depends (linearly) on the total number of non-zero bins in the histogram:</p>
+
+<div><figure><img src="https://tachella.github.io/assets/img/" width="509" height="241" /><figcaption>Fig. 1: Execution time of a 3D reconstruction algorithm as a function the number of non-zero bins in the collected time-of-arrival histograms (from ).</figcaption></figure></div>
+
+<p>As single-photon lidar arrays get bigger and faster, the number of photons collected per histogram gets bigger, while there is an increased need for faster real-time frame rates. The volume of photon data that needs to be transmitted is ever-increasingly large, generating a <strong>data transfer bottleneck</strong>. Moreover, reconstruction algorithms are required to deal with ever-increasingly large and dense histograms, generating a <strong>computational bottleneck</strong>. So far, most attempts to alleviate these bottlenecks consisted in building coarser histograms. Despite reducing the amount of information to be transferred and processed, this approach sacrifices important depth resolution.</p>
+
+<p>In <a class="citation" href="#sheehan2021sketching">(Sheehan et al., 2021)</a>, we propose a sketching method to massively <strong>compress the histograms without any significant loss of information</strong>, removing the data and computational bottlenecks. The technique builds on recent advances in <a href="https://arxiv.org/abs/1706.07180">compressive learning</a>, a theory for compressing distributions. The compressed data consists of a series of \(K\) statistics</p>
+
+\[\Phi_k(t) = [\cos(w_k t),  \sin(w_kt)]^{T} \quad \text{for} \quad k=1, \dots, K\]
+
+<p>where \(t\) denotes the time of arrival. The statistics can be <strong>computed on-the-fly</strong>, i.e. updated with each photon arrival, hence completely by-passing the need to construct a histogram. Below you can see the large difference between reducing the data by coarse binning the histogram and our proposed method:</p>
+
+<div><figure><img src="https://tachella.github.io/assets/img/" /></figure></div>
+
+<h3 id="related-papers">Related papers</h3>
+<div class="publications">
+<ol class="bibliography"><li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 container_img"><div class="card hooverable">
+            <img class="card-img-top" src="https://tachella.github.io/assets/img/sheehan2021sketching.gif" />
+          </div></div>
+
+        <!-- Entry bib key -->
+        <div id="sheehan2021sketching" class="col-sm-8">
+        
+          <!-- Title -->  
+          <div class="title">A sketching framework for reduced data transfer in photon counting lidar</div>
+          <!-- Author -->
+          <div class="author">Sheehan, Michael P,&nbsp;
+                  <em>Tachella, Julian</em>,&nbsp;and Davies, Mike E
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>IEEE Transactions on Computational Imaging</em> 2021
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2102.08732" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9541047" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/projects/lidarsketching" class="btn btn-sm z-depth-0" role="button">Project</a>
+            <a href="https://gitlab.com/Tachella/sketched_lidar" class="btn btn-sm z-depth-0" role="button">Code</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Single-photon lidar has become a prominent tool for depth imaging in recent years. At the core of the technique, the depth of a target is measured by constructing a histogram of time delays between emitted light pulses and detected photon arrivals. A major data processing bottleneck arises on the device when either the number of photons per pixel is large or the resolution of the time-stamp is fine, as both the space requirement and the complexity of the image reconstruction algorithms scale with these parameters. We solve this limiting bottleneck of existing lidar techniques by sampling the characteristic function of the time of flight (ToF) model to build a compressive statistic, a so-called sketch of the time delay distribution, which is sufficient to infer the spatial distance and intensity of the object. The size of the sketch scales with the degrees of freedom of the ToF model (number of objects) and not, fundamentally, with the number of photons or the time-stamp resolution. Moreover, the sketch is highly amenable for on-chip online processing. We show theoretically that the loss of information for compression is controlled and the mean squared error of the inference quickly converges towards the optimal Cramér-Rao bound (i.e. no loss of information) for modest sketch sizes. The proposed compressed single-photon lidar framework is tested and evaluated on real life datasets of complex scenes where it is shown that a compression rate of up-to 150 is achievable in practice without sacrificing the overall resolution of the reconstructed image.</p>
+          </div>
+        </div>
+      </div>
+</li></ol>
+</div>]]></content><author><name></name></author><summary type="html"><![CDATA[sketching for lidar]]></summary></entry><entry><title type="html">The neural tangent link between CNN denoisers and non-local filters</title><link href="https://tachella.github.io/blog/2020/ntd/" rel="alternate" type="text/html" title="The neural tangent link between CNN denoisers and non-local filters" /><published>2020-09-01T17:39:00+00:00</published><updated>2020-09-01T17:39:00+00:00</updated><id>https://tachella.github.io/blog/2020/ntd</id><content type="html" xml:base="https://tachella.github.io/blog/2020/ntd/"><![CDATA[<p>Convolutional neural networks (CNNs) are a well-established tool for solving computational imaging problems. It has been recently shown that, despite being highly overparameterized (more weights than pixels), networks trained with a single corrupted image can still perform as well as fully trained networks (a.k.a. the deep image prior). These results highlight that CNNs posses a very powerful learning bias towards natural images, which explains their great success in recent years. Multiple intriguing question arise:</p>
+
+<p><strong>What is the learning bias?</strong>
+Are neural networks performing something similar to other existing tools in signal processing?
+Is the existing theory able to explain this phenomenon?</p>
+
+<p>In <a class="citation" href="#tachella2021nonlocal">(Tachella et al., 2021)</a>, we make a first step towards answering these questions, using recent theoretical insights of infinitely wide networks (a.k.a. the neural tangent kernel), elucidating formal links between CNNs and well-known non-local patch denoisers, such as non-local means.</p>
+
+<p>Non-local means uses the following non-local similarity function:</p>
+
+\[k(y_i, y_j) = \exp(-||y_i-y_j||^2/\sigma^2)\]
+
+<p>where \(y_i\) and \(y_j\) are small image patches (e.g. \(5\times 5\) pixels) around the pixels \(i\) and \(j\). The filter matrix \(W\) is constructed as \(W = \text{diag}(\frac{1}{1^TK}) K\) and the simplest denoising procedure consists of applying \(W\) to the (vectorized) noisy image \(y\), that is \(\hat{z}=W y\). There are more sophisticated procedures such as twicing, where the filtering matrix is applied iteratively to the residual:</p>
+
+\[z^{k+1} = z^{k} + W(y-z^{k})\]
+
+<p>This procedure trades bias (over-smooth estimates) for variance (noisy estimates), and is stopped when a good balance is achieved. How does this relate to a convolutional neural network trained with a single image? It turns out that, as the network’s width increases, standard gradient descent optimization of the squared \(\ell_2\) loss follows the twicing process, with a (fixed!) filter matrix \(W=K\) where the pixel affinity function is available in closed form and only depends on the architecture of the network! For example, a simple single-hidden layer network with a filter of \(k\times k\) pixels, corresponds to a non-local similarity function</p>
+
+\[k(y_i, y_j) = \frac{||y_i|| ||y_j||}{\pi} (\sin\phi+(\pi-\phi)\cos\phi)\]
+
+<p>where \(\phi\) is the angle between patches \(y_i\) and \(y_j\) of \(k\times k\) pixels each. Hence, we can compute the implicit filter in closed-form, without need to train a very large network!</p>
+
+<p>Our analysis reveals that a neural network that, while the NTK theory accurately predicts the filter associated with networks trained using standard gradient descent, it falls short to explain the behavior of networks trained using the popular Adam optimizer. The latter achieves a larger change of weights in hidden layers, adapting the non-local filtering function during training. We evaluate our findings via extensive image denoising experiments. See the paper for more details!</p>
+
+<h3 id="related-papers">Related papers</h3>
+<div class="publications">
+<ol class="bibliography"><li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 container_img"><div class="card hooverable">
+            <img class="card-img-top" src="https://tachella.github.io/assets/img/tachella2021nonlocal.png" />
+          </div></div>
+
+        <!-- Entry bib key -->
+        <div id="tachella2021nonlocal" class="col-sm-8">
+        
+          <!-- Title -->  
+          <div class="title">The Neural Tangent Link Between CNN Denoisers and Non-Local Filters</div>
+          <!-- Author -->
+          <div class="author">
+                  <em>Tachella, Julian</em>,&nbsp;Tang, Junqi,&nbsp;and Davies, Mike
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em> Jun 2021
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Tachella_The_Neural_Tangent_Link_Between_CNN_Denoisers_and_Non-Local_Filters_CVPR_2021_paper.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/blog/2020/ntd" class="btn btn-sm z-depth-0" role="button">Blog</a>
+            <a href="https://youtu.be/vLxzxp2boyY" class="btn btn-sm z-depth-0" role="button">Video</a>
+            <a href="/projects/understandingcnns" class="btn btn-sm z-depth-0" role="button">Project</a>
+            <a href="https://gitlab.com/Tachella/neural_tangent_denoiser" class="btn btn-sm z-depth-0" role="button">Code</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Convolutional Neural Networks (CNNs) are now a well-established tool for solving computational imaging problems. Modern CNN-based algorithms obtain state-of-the-art performance in diverse image restoration problems. Furthermore, it has been recently shown that, despite being highly overparameterized, networks trained with a single corrupted image can still perform as well as fully trained networks. We introduce a formal link between such networks through their neural tangent kernel (NTK), and well-known non-local filtering techniques, such as non-local means or BM3D. The filtering function associated with a given network architecture can be obtained in closed form without need to train the network, being fully characterized by the random initialization of the network weights. While the NTK theory accurately predicts the filter associated with networks trained using standard gradient descent, our analysis shows that it falls short to explain the behaviour of networks trained using the popular Adam optimizer. The latter achieves a larger change of weights in hidden layers, adapting the non-local filtering function during training. We evaluate our findings via extensive image denoising experiments.</p>
+          </div>
+        </div>
+      </div>
+</li></ol>
+</div>]]></content><author><name></name></author><summary type="html"><![CDATA[towards an understanding of the deep image prior]]></summary></entry></feed>
