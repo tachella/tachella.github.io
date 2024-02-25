@@ -7,10 +7,6 @@ description: Openings in ENS Lyon
 nav: true
 ---
 
-{%- include figure_post.html 
-    path="assets/img/lyon2.jpg"
-    size="100%"
--%}
 
 We are looking for highly motivated students who want to do cutting-edge research in machine learning and signal processing in a stimulating environent at ENSL, in the beautiful city of Lyon, France.
 
