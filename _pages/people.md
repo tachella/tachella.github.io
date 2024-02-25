@@ -8,18 +8,18 @@ nav: true
 
 #### Postdocs
 
-- [Dec 23 - ...] [Nils Laurent](https://nils-laurent.github.io/) (with N. Pustelnik and E. Riccietti)
+- [Dec 23 - ...] [Nils Laurent](https://nils-laurent.github.io/) (with [N. Pustelnik](https://perso.ens-lyon.fr/nelly.pustelnik/) and [E. Riccietti](https://perso.ens-lyon.fr/elisa.riccietti/))
 
 #### PhD Students
 
-- [Nov 23 - ...] Victor Sechaud (with P. Abry)
-- [Nov 23 - ...] Maurine Bouzeid (with J.-Y. Tourneret)
+- [Nov 23 - ...] [Victor Sechaud](https://www.ens-lyon.fr/PHYSIQUE/presentation/annuaire/sechaud-victor) (with [P. Abry](https://perso.ens-lyon.fr/patrice.abry/))
+- [Nov 23 - ...] Maurine Bouzeid (with [J.-Y. Tourneret](https://perso.tesa.prd.fr/jyt/))
 
 #### Master Interns
 
-- [Apr 23 - ...] Jeremy Scanvic (with P. Abry and M. Davies)
-- [Feb 24 - ...] Julie Limonet (with L. Couston)
-- [Feb 24 - ...] Zhiyuan Hu (with J. Dong)
+- [Apr 23 - ...] [Jeremy Scanvic](https://jeremyscanvic.com/) (with [P. Abry](https://perso.ens-lyon.fr/patrice.abry/) and [M. Davies](https://www.eng.ed.ac.uk/about/people/professor-michael-e-davies))
+- [Feb 24 - ...] Julie Limonet (with [L. Couston](https://louiscouston.github.io/))
+- [Feb 24 - ...] Zhiyuan Hu (with [J. Dong](https://scholar.google.fr/citations?user=0itnpNgAAAAJ&hl=fr))
 
 ### Alumni
 

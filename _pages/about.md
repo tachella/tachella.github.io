@@ -7,7 +7,8 @@ subtitle: <a href='https://www.cnrs.fr/'>CNRS</a> & <a href='http://www.ens-lyon
 profile:
   align: right
   image: profile2.jpg
-  address: <p> julian.tachella@cnrs.fr</p>
+  more_info: <p> julian.tachella@cnrs.fr</p>
+
   
 
 news: true  # includes a list of news items
