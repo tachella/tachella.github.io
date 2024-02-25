@@ -7,6 +7,11 @@ description: Openings in ENS Lyon
 nav: true
 ---
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/lyon2.jpg" title="Quai St. Vincent in Lyon" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 We are looking for highly motivated students who want to do cutting-edge research in machine learning and signal processing in a stimulating environent at ENSL, in the beautiful city of Lyon, France.
 
