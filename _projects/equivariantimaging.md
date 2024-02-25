@@ -2,7 +2,7 @@
 layout: page
 title: Unsupervised Learning to Solve Inverse Problems
 description: 
-img: assets/img/publication_preview/chen2021robust.PNG
+img: assets/img/publication_preview/chen2021robust.png
 importance: 1
 category: work
 ---
