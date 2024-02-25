@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Understanding Deep Networks for Imaging
+title: Understanding the Deep Image Prior
 description: 
-img: assets/img/understanding.PNG
+img: assets/img/understanding.png
 importance: 2
 category: work
 ---

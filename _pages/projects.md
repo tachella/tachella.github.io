@@ -1,8 +1,8 @@
 ---
 layout: page
-title: blog
+title: Blog
 permalink: /blog/
-description: A collection of some research projects
+description: Blog posts about some research projects
 nav: true
 nav_order: 3
 horizontal: false
