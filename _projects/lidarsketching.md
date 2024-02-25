@@ -9,10 +9,15 @@ category: work
 
 Single-photon lidar is an emerging ranging technique that can obtain 3D information at kilometre distance with centimetre precision, and has important applications in self-driving cars, forest canopy monitoring, non-line-of-sight imaging and more. This modality consists of contracting a histogram of time-of-arrival of individual photons per pixel. For each object in the line-of-sight of the device there is a peak in the histogram. These peaks are found by a 3D reconstruction algorithm that takes into account the Poisson statistics of the photon-count data, while promoting spatial smoothness in the reconstructed point clouds. In a previous post, I presented an algorithm that can find multiple peaks per pixel in a matter of milliseconds even in challenging very long range scenarios with high background noise. As the algorithm needs to process the histogram data, the <strong>reconstruction time</strong> depends (linearly) on the total number of non-zero bins in the histogram:
 
-{%- include figure_post.html 
-    path="assets/img/timing_bins.png"
-    size="60%"
-    caption="Execution time of a 3D reconstruction algorithm as a function the number of non-zero bins in the collected time-of-arrival histograms" -%}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/timing_bins.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Execution time of a 3D reconstruction algorithm as a function the number of non-zero bins in the collected time-of-arrival histograms
+</div>
+
 
 As single-photon lidar arrays get bigger and faster, the number of photons collected per histogram gets bigger, while there is an increased need for faster real-time frame rates. The volume of photon data that needs to be transmitted is ever-increasingly large, generating a <strong>data transfer bottleneck</strong>. Moreover, reconstruction algorithms are required to deal with ever-increasingly large and dense histograms, generating a <strong>computational bottleneck</strong>. So far, most attempts to alleviate these bottlenecks consisted in building coarser histograms. Despite reducing the amount of information to be transferred and processed, this approach sacrifices important depth resolution.
 
@@ -24,10 +29,15 @@ $$\Phi_k(t) = [\cos(w_k t),  \sin(w_kt)]^{T} \quad \text{for} \quad k=1, \dots, 
 where $$t$$ denotes the time of arrival. The statistics can be <strong>computed on-the-fly</strong>, i.e. updated with each photon arrival, hence completely by-passing the need to construct a histogram. Below you can see the large difference between reducing the data by coarse binning the histogram and our proposed method:
 
 
-{%- include figure_post.html 
-    path="assets/img/sheehan2021sketching2.gif"
-    size="100%"
-    caption="Coarse binning and sketching" -%}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/sheehan2021sketching2.gif" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Coarse binning and sketching
+</div>
+
 
 In {% cite sheehan2021detection %}, we propose detection methods (i.e., deciding whether there is a surface in a given pixel), which only require access to the sketched data and perform similarly to the other detection methods which require access to time-of-arrival histograms.
 

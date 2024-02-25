@@ -30,10 +30,15 @@ T_gx = (f\circ A) (T_gx).
  \end{equation}
  which just relies on the fact that $$x'= T_gx$$ is another valid signal. Hence we can see beyond the range space of $$A$$, as we have an implicit access to multiple different operators  $$A_g = AT_g$$ for all possible transformations $$T_1,\dots,T_{G}$$. 
 
-{%- include figure_post.html 
-    path="assets/img/ei_iccv.png"
-    size="100%"
-    caption="Learning to image from only measurements. Training an imaging network through just measurement consistency (MC) does not significantly improve the reconstruction over the simple pseudo-inverse. However, by enforcing invariance in the reconstructed image set, equivariant imaging (EI) performs almost as well as a fully supervised network. Top: sparse view CT reconstruction, Bottom: pixel inpainting. PSNR is shown in top right corner of the images" -%}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/ei_iccv.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+   Learning to image from only measurements. Training an imaging network through just measurement consistency (MC) does not significantly improve the reconstruction over the simple pseudo-inverse. However, by enforcing invariance in the reconstructed image set, equivariant imaging (EI) performs almost as well as a fully supervised network. Top: sparse view CT reconstruction, Bottom: pixel inpainting. PSNR is shown in top right corner of the images
+</div>
+
 
 {% cite chen2021equivariant %} shows that the invariance constraint on $$(f\circ A)$$ can be easily incorporated as an additional loss term when training a deep network. In {% cite chen2021robust %} we extended the unsupervised method to account for noise. The method builds an unsupervised loss using Stein's unbiased risk (SURE) estimator, which approximates the noiseless measurement consistency.
 
