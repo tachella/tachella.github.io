@@ -14,16 +14,18 @@ nav: true
 
 - [Nov 23 - ...] [Victor Sechaud](https://www.ens-lyon.fr/PHYSIQUE/presentation/annuaire/sechaud-victor) (with [P. Abry](https://perso.ens-lyon.fr/patrice.abry/))
 - [Nov 23 - ...] Maurine Bouzeid (with [J.-Y. Tourneret](https://perso.tesa.prd.fr/jyt/))
+- [Nov 24 - ...] Julie Limonet (with [L. Couston](https://louiscouston.github.io/))
 
 #### Master Interns
 
 - [Apr 23 - ...] [Jeremy Scanvic](https://jeremyscanvic.com/) (with [P. Abry](https://perso.ens-lyon.fr/patrice.abry/) and [M. Davies](https://www.eng.ed.ac.uk/about/people/professor-michael-e-davies))
-- [Feb 24 - ...] Julie Limonet (with [L. Couston](https://louiscouston.github.io/))
-- [Feb 24 - ...] Zhiyuan Hu (with [J. Dong](https://scholar.google.fr/citations?user=0itnpNgAAAAJ&hl=fr))
+
 
 ### Alumni
 
-- [Apr 22 - Aug 22] Bastian Payre (with N. Pustelnik). Master intern
+- [Feb 24 - May 24] Zhiyuan Hu (with [J. Dong](https://scholar.google.fr/citations?user=0itnpNgAAAAJ&hl=fr)). Master intern.
+- [Apr 22 - Aug 22] Bastian Payre (with N. Pustelnik). Master intern.
+
 
 ### Colaborators
 
