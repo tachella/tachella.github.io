@@ -28,6 +28,9 @@ List of references mentioned in the tutorial by topic.
 #### Part I: Introduction
 - Zbontar, Jure, et al. "fastMRI: An open dataset and benchmarks for accelerated MRI." arXiv preprint arXiv:1811.08839 (2018).
 - Ulyanov, Dmitry, Andrea Vedaldi, and Victor Lempitsky. "Deep image prior." Proceedings of the IEEE conference on computer vision and pattern recognition. 2018.
+- Jin K. H., McCann M. T., Froustey E., Unser M., Deep convolutional neural network for inverse problems in imaging. IEEE Trans. Im. Proc., 2017.
+- Monga V., Li Y., Eldar Y. C., Algorithm unrolling: interpretable, efficient deep learning for signal and image processing. IEEE Sig. Proc. Mag., 2021.
+- Y. Zhu et al., "Denoising Diffusion Models for Plug-and-Play Image Restoration," 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), Vancouver, BC, Canada, 2023, pp. 1219-1229.
 
 #### Part II: Learning from noisy data
 
@@ -42,6 +45,7 @@ List of references mentioned in the tutorial by topic.
 - Eldar, Yonina C. "Generalized SURE for exponential families: Applications to regularization." IEEE Transactions on Signal Processing 57.2 (2008): 471-481.
 - Metzler, Christopher A., et al. "Unsupervised learning with Stein's unbiased risk estimator." arXiv preprint arXiv:1805.10531 (2018).
 - Kim, Kwanyoung, and Jong Chul Ye. "Noise2score: tweedies approach to self-supervised image denoising without clean images." Advances in Neural Information Processing Systems 34 (2021): 864-874.
+- J. Ma and L. Ping, "Orthogonal AMP," in IEEE Access, vol. 5, pp. 2020-2033, 2017.
 
 ##### Noisier2Noise methods
 - Moran, Nick, et al. "Noisier2noise: Learning to denoise from unpaired noisy data." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
@@ -58,6 +62,7 @@ List of references mentioned in the tutorial by topic.
 
 ##### Blind spot networks
 - Laine, Samuli, et al. "High-quality self-supervised deep image denoising." Advances in Neural Information Processing Systems 32 (2019).
+- W Lee, S Son, K M Lee; AP-BSN: Self-Supervised Denoising for Real-World Images via Asymmetric PD and Blind-Spot Network. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022, pp. 17725-17734
 
 #### Part III: Learning from incomplete operators
 
@@ -65,7 +70,8 @@ List of references mentioned in the tutorial by topic.
 - Tachella, Julian, Dongdong Chen, and Mike Davies. "Unsupervised learning from incomplete measurements for inverse problems." Advances in Neural Information Processing Systems 35 (2022): 4983-4995.
 - Yaman, Burhaneddin, et al. "Self supervised learning of physics guided reconstruction neural networks without fully sampled reference data." Magnetic resonance in medicine 84.6 (2020): 3172-3191.
 - Daras, Giannis, et al. "Ambient diffusion: Learning clean distributions from corrupted data." Advances in Neural Information Processing Systems 36 (2024).
-
+- Gan W. et al., Self-Supervised Deep Equilibrium Models with Theoretical Guarantees and Applications to MRI Reconstruction. IEEE Trans. Comp Imag., 2023.
+- C. Millard and M. Chiew, "A Theoretical Framework for Self-Supervised MR Image Reconstruction Using Sub-Sampling via Variable Density Noisier2Noise," in IEEE Transactions on Computational Imaging, vol. 9, pp. 707-720, 2023.
 
 #### Part IV: Equivariant Imaging
 - Chen, Dongdong, Julian Tachella, and Mike E. Davies. "Equivariant imaging: Learning beyond the range space." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2021.
@@ -76,6 +82,7 @@ List of references mentioned in the tutorial by topic.
 - Sauer, Tim, James A. Yorke, and Martin Casdagli. "Embedology." Journal of statistical Physics 65 (1991): 579-616.
 - Tachella, Julian, Dongdong Chen, and Mike Davies. "Sensing theorems for unsupervised learning in linear inverse problems." Journal of Machine Learning Research 24.39 (2023): 1-45.
 - Cramer, Harald; Wold, Herman (1936). "Some Theorems on Distribution Functions". Journal of the London Mathematical Society. 11 (4): 290-294.
+-  Bourrier A., Davies M. E., Peleg T., Perez P., Gribonval R. Fundamental Performance Limits for Ideal Decoders in High-Dimensional Linear Inverse Problems. IEEE Trans. Inf. Thy., 2014.
 
 #### Part VI: Perspectives
 - Bora, Ashish, Eric Price, and Alexandros G. Dimakis. "AmbientGAN: Generative models from lossy measurements." International conference on learning representations. 2018.
