@@ -19,7 +19,7 @@ We are looking for highly motivated students who want to do cutting-edge researc
 
 We have one open postdoc position:
 
-- I am looking for a postdoc as part of the [ANR UNLIP project](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/). The project will investigate new methods for self-supervised learning in non-linear imaging problems. Do not hesitate to contact me if you are interested in the position!
+- I am looking for a postdoc as part of the [ANR UNLIP project](https://anr.fr/Projet-ANR-23-CE23-0013). The project will investigate new methods for self-supervised learning in non-linear imaging problems. Do not hesitate to contact me if you are interested in the position!
 
 
 ### Master Internships and PhD scholarships

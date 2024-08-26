@@ -6,10 +6,17 @@ img: assets/img/EUSIPCO24_header_sharp.png
 importance: 1
 category: work
 ---
-This page contains information about the tutorial on self-supervised learning for imaging, given by [Mike Davies](https://www.eng.ed.ac.uk/about/people/professor-michael-e-davies) and me.
+This page contains information about the tutorial on self-supervised learning for imaging, given by [Mike Davies](https://www.eng.ed.ac.uk/about/people/professor-michael-e-davies) and I.
 The tutorial is part of the [EUSIPCO 2024 conference](https://eusipcolyon.sciencesconf.org/resource/page/id/28) on the 26/08/2024 in Lyon, France.
 
-**Slides**: The slides of the tutorial will be uploaded here after the conference.
+**Slides**: 
+
+1. [Introduction](/assets/pdf/part1.pdf)
+2. [Learning from noisy data](/assets/pdf/part2.pdf)
+3. [Learning from incomplete operators](/assets/pdf/part3.pdf)
+4. [Equivariant imaging](/assets/pdf/part4.pdf)
+5. [Identification theory](/assets/pdf/part5.pdf)
+5. [Perspectives](/assets/pdf/part6.pdf)
 
 **Code**: We will follow the Google Colab demo in [this link](https://colab.research.google.com/drive/1_dlXdNbgwg5u7_OAl29WiMRMOybnkCIo?usp=sharing).
 More self-supervised learning demos can be found on the deepinverse website [here](https://deepinv.github.io/deepinv/auto_examples/index.html#self-supervised-learning).
@@ -41,11 +48,11 @@ List of references mentioned in the tutorial by topic.
 ##### SURE methods
 - Stein, Charles M. "Estimation of the mean of a multivariate normal distribution." The annals of Statistics (1981): 1135-1151.
 - Breiman, Leo. "The little bootstrap and other methods for dimensionality selection in regression: X-fixed prediction error." Journal of the American Statistical Association 87.419 (1992): 738-754.
+- Hudson, H. Malcolm. "A natural identity for exponential families with applications in multiparameter estimation." The Annals of Statistics 6.3 (1978): 473-484.
 - Ramani, Sathish, Thierry Blu, and Michael Unser. "Monte-Carlo SURE: A black-box optimization of regularization parameters for general denoising algorithms." IEEE Transactions on image processing 17.9 (2008): 1540-1554.
 - Eldar, Yonina C. "Generalized SURE for exponential families: Applications to regularization." IEEE Transactions on Signal Processing 57.2 (2008): 471-481.
 - Metzler, Christopher A., et al. "Unsupervised learning with Stein's unbiased risk estimator." arXiv preprint arXiv:1805.10531 (2018).
 - Kim, Kwanyoung, and Jong Chul Ye. "Noise2score: tweedies approach to self-supervised image denoising without clean images." Advances in Neural Information Processing Systems 34 (2021): 864-874.
-- J. Ma and L. Ping, "Orthogonal AMP," in IEEE Access, vol. 5, pp. 2020-2033, 2017.
 
 ##### Noisier2Noise methods
 - Moran, Nick, et al. "Noisier2noise: Learning to denoise from unpaired noisy data." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
