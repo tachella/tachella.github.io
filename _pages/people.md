@@ -12,9 +12,13 @@ nav: true
 
 #### PhD Students
 
-- [Nov 23 - ...] [Victor Sechaud](https://www.ens-lyon.fr/PHYSIQUE/presentation/annuaire/sechaud-victor) (with [P. Abry](https://perso.ens-lyon.fr/patrice.abry/))
+- [Oct 24 - ...] Julie Limonet (with [L. Couston](https://louiscouston.github.io/))
 - [Nov 23 - ...] Maurine Bouzeid (with [J.-Y. Tourneret](https://perso.tesa.prd.fr/jyt/))
-- [Nov 24 - ...] Julie Limonet (with [L. Couston](https://louiscouston.github.io/))
+- [Nov 23 - ...] [Victor Sechaud](https://www.ens-lyon.fr/PHYSIQUE/presentation/annuaire/sechaud-victor) (with [P. Abry](https://perso.ens-lyon.fr/patrice.abry/))
+
+#### Visiting Students
+- [Aug 24 - Dec 24] [Brett Levac](https://scholar.google.com/citations?user=rRHEl5UAAAAJ&hl=en) (PhD student at UTAustin, USA)
+
 
 #### Master Interns
 

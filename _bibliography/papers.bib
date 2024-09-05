@@ -1,5 +1,28 @@
 ---
 ---
+
+@article{tachella2023unsure,
+  title={UNSURE: Unknown Noise level Stein's Unbiased Risk Estimator},
+  author={Tachella, Julian  and Davies, Mike and Jacques, Laurent},
+  journal={arXiv preprint arXiv:2409.01985},
+  year={2024},
+  arxiv={2409.01985},
+  preview = {UNSURE_demo.png},
+  code = {https://github.com/tachella/unsure},
+  abstract = {Recently, many self-supervised learning methods for image reconstruction have been proposed that can learn from noisy data alone, bypassing the need for ground-truth references. Most existing methods cluster around two classes: i) Noise2Self and similar cross-validation methods that require very mild knowledge about the noise distribution, and ii) Stein's Unbiased Risk Estimator (SURE) and similar approaches that assume full knowledge of the distribution. The first class of methods is often suboptimal compared to supervised learning, and the second class is often impractical, as the noise level is generally unknown in real-world applications. In this paper, we provide a theoretical framework that characterizes this expressivity-robustness trade-off and propose a new approach based on SURE, but unlike the standard SURE, does not require knowledge about the noise level. Throughout a series of experiments, we show that the proposed estimator outperforms other existing self-supervised methods on various imaging inverse problems.}
+  }
+
+@article{sechaud2023eusipco,
+  title={Equivariance-based self-supervised learning for audio signal recovery from clipped measurements},
+  author={Sechaud, Victor and Jacques, Laurent and Abry, Patrice and Tachella, Julian},
+  journal={EUSIPCO 2024},
+  year={2024},
+  preview={clipped_eusipco.png},
+  pdf = {https://eurasip.org/Proceedings/Eusipco/Eusipco2024/pdfs/0000852.pdf},
+  abstract = {In numerous inverse problems, state-of-the-art solving strategies involve training neural networks from ground truth and associated measurement datasets that, however, may be expensive or impossible to collect. Recently, self-supervised learning techniques have emerged, with the major advantage of no longer requiring ground truth data. Most theoretical and experimental results on self-supervised learning focus on linear inverse problems. The present work aims to study self-supervised learning for the non-linear inverse problem of recovering audio signals from clipped measurements. An equivariance-based selfsupervised loss is proposed and studied. Performance is assessed on simulated clipped measurements with controlled and varied levels of clipping, and further reported on standard real music signals. We show that the performance of the proposed equivariance-based self-supervised declipping strategy compares favorably to fully supervised learning while only requiring clipped measurements alone for training.}
+  }
+
+
 @article{scanvic2023scale,
   title={Self-Supervised Learning for Image Super-Resolution and Deblurring},
   author={Scanvic, Jeremy and Davies, Mike and Abry, Patrice and Tachella, Julian},
