@@ -13,19 +13,19 @@ nav: true
     </div>
 </div>
 
-We are looking for highly motivated students who want to do cutting-edge research in machine learning and signal processing in a stimulating environent at ENSL, in the beautiful city of Lyon, France.
+We are looking for highly motivated students/postdocs who want to do research in machine learning and signal processing in a stimulating environent at ENS Lyon, in the beautiful city of Lyon, France.
 
 ### Postdoc positions
 
-We have one open postdoc position:
+We currently have one open postdoc position:
 
-- I am looking for a postdoc as part of the [ANR UNLIP project](https://anr.fr/Projet-ANR-23-CE23-0013). The project will investigate new methods for self-supervised learning in non-linear imaging problems. Do not hesitate to contact me if you are interested in the position!
+- I am looking for a postdoc as part of the [ANR UNLIP project](https://anr.fr/Projet-ANR-23-CE23-0013) with a flexible start date between the end of 2024 and beginning of 2025. The project will investigate new learning-based methods for large-scale imaging inverse problems, see the offer details [here](/assets/pdf/postdoc_unlip.pdf). Do not hesitate to contact me if you are interested in the position!
 
 
 ### Master Internships and PhD scholarships
 
 
-We have a master open projects at ENS Lyon for Spring 2024 (with possible continuation into a PhD thesis):
+We have a master open projects at ENS Lyon for Spring 2025 (with possible continuation into a PhD thesis):
 
 - Self-Supervised Learning for Astronomical Imaging (with [Loic Denis](https://perso.univ-st-etienne.fr/deniloic/)). See the offer details [here](/assets/pdf/internship-offer-SelfSupLearning-Astro-Tachella-Denis.pdf).
 
