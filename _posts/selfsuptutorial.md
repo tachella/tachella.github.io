@@ -4,7 +4,7 @@ title: Self-supervised learning for imaging tutorial
 date: 2024-01-27 19:22:00
 description: information about EUSIPCO'24 tutorial
 img: assets/img/EUSIPCO24_header_sharp.png
-tags: formatting code
+tags: tutorial
 categories: sample-posts
 ---
 
