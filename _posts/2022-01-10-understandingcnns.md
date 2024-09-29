@@ -1,10 +1,9 @@
 ---
-layout: page
+layout: post
 title: Understanding the Deep Image Prior
-description: 
+date: 2022-01-10 19:22:00
+description: Trying to unveil the mystery
 img: assets/img/understanding.png
-importance: 2
-category: work
 ---
 
 Convolutional neural networks (CNNs) are a well-established tool for solving computational imaging problems. It has been recently shown that, despite being highly overparameterized (more weights than pixels), networks trained with a single corrupted image can still perform as well as fully trained networks (a.k.a. the deep image prior). These results highlight that CNNs posses a very powerful learning bias towards natural images, which explains their great success in recent years. Multiple intriguing question arise:

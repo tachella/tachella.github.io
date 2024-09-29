@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: post
 title: Unsupervised Learning to Solve Inverse Problems
-description: 
+date: 2022-05-10 19:22:00
+description: How to learn from incomplete data only
 img: assets/img/publication_preview/chen2021robust.png
 importance: 2
 category: work
