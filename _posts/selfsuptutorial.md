@@ -1,11 +1,13 @@
 ---
-layout: page
+layout: post
 title: Self-supervised learning for imaging tutorial
-description: 
+date: 2024-01-27 19:22:00
+description: information about EUSIPCO'24 tutorial
 img: assets/img/EUSIPCO24_header_sharp.png
-importance: 1
-category: work
+tags: formatting code
+categories: sample-posts
 ---
+
 This page contains information about the tutorial on self-supervised learning for imaging, given by [Mike Davies](https://www.eng.ed.ac.uk/about/people/professor-michael-e-davies) and I.
 The tutorial is part of the [EUSIPCO 2024 conference](https://eusipcolyon.sciencesconf.org/resource/page/id/28) on the 26/08/2024 in Lyon, France.
 
