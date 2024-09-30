@@ -5,7 +5,7 @@ date: 2022-05-10 19:22:00
 description: How to learn from incomplete data only
 img: assets/img/publication_preview/chen2021robust.png
 importance: 2
-category: work
+category: self-supervised learning
 ---
 
 Inverse problems are ubiquitous in signal and image processing. In most applications, we need to reconstruct an underlying signal $$x\in\mathbb{R}^{n}$$, from some measurements $$y\in\mathbb{R}^{m}$$, that is, invert the forward measurement process, 

@@ -4,6 +4,7 @@ title: Sketching Single-Photon Data
 date: 2021-10-11 19:22:00
 description: compressing large-scale lidar data
 img: assets/img/sketching_summary.PNG
+category: lidar
 ---
 
 Single-photon lidar is an emerging ranging technique that can obtain 3D information at kilometre distance with centimetre precision, and has important applications in self-driving cars, forest canopy monitoring, non-line-of-sight imaging and more. This modality consists of contracting a histogram of time-of-arrival of individual photons per pixel. For each object in the line-of-sight of the device there is a peak in the histogram. These peaks are found by a 3D reconstruction algorithm that takes into account the Poisson statistics of the photon-count data, while promoting spatial smoothness in the reconstructed point clouds. In a previous post, I presented an algorithm that can find multiple peaks per pixel in a matter of milliseconds even in challenging very long range scenarios with high background noise. As the algorithm needs to process the histogram data, the <strong>reconstruction time</strong> depends (linearly) on the total number of non-zero bins in the histogram:

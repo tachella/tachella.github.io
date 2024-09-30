@@ -1,7 +1,7 @@
 ---
 layout: page
 title: UNLIP - Unsupervised Learning for Non-Linear Inverse Problems
-img: assets/img/unlip.png
+img: assets/img/unlip_project.png
 importance: 1
 category: work
 ---

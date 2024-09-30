@@ -4,6 +4,7 @@ title: Self-supervised learning for imaging tutorial
 date: 2024-08-27 19:22:00
 description: information about EUSIPCO'24 tutorial
 img: assets/img/EUSIPCO24_header_sharp.png
+category: self-supervised learning
 ---
 
 This page contains information about the tutorial on self-supervised learning for imaging, given by [Mike Davies](https://www.eng.ed.ac.uk/about/people/professor-michael-e-davies) and I.

@@ -4,7 +4,7 @@ title: 3D Reconstruction From Single-Photon Data
 description: 
 img: assets/img/lidar_summary.png
 importance: 5
-category: work
+category: lidar
 ---
 
 Single-photon light detection and ranging (lidar) has emerged as a prime candidate technology for depth imaging through challenging environments. This modality relies on constructing, for each pixel, a histogram of time delays between emitted light pulses and detected photon arrivals. The problem of estimating the number of imaged surfaces, their reflectivity and position becomes very challenging in the low-photon regime (which equates to short acquisition times) or relatively high background levels (i.e., strong ambient illumination). 
