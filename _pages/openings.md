@@ -17,10 +17,7 @@ We are looking for highly motivated students/postdocs who want to do research in
 
 ### Postdoc positions
 
-We currently have one open postdoc position:
-
-- I am looking for a postdoc as part of the [ANR UNLIP project](https://anr.fr/Projet-ANR-23-CE23-0013) with a flexible start date between the end of 2024 and beginning of 2025. The project will investigate new learning-based methods for large-scale imaging inverse problems, see the offer details [here](/assets/pdf/postdoc_unlip.pdf). Do not hesitate to contact me if you are interested in the position!
-
+We don't have currently open postdoc positions, but do not hesitate to get in touch if you would like to do a postdoc in the lab.
 
 ### Master Internships and PhD scholarships
 
