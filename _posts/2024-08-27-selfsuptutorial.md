@@ -8,19 +8,24 @@ category: self-supervised learning
 ---
 
 This page contains information about the tutorial on self-supervised learning for imaging, given by [Mike Davies](https://www.eng.ed.ac.uk/about/people/professor-michael-e-davies) and I.
-The tutorial is part of the [EUSIPCO 2024 conference](https://eusipcolyon.sciencesconf.org/resource/page/id/28) on the 26/08/2024 in Lyon, France.
+The tutorial is part of the [EUSIPCO 2024 conference](https://eusipcolyon.sciencesconf.org/resource/page/id/28) on the 26/08/2024 in Lyon, France, and the MAC-MIGS doctoral school given at the University of Edinburgh in February 2025.
 
-**Slides**: 
 
-1. [Introduction](/assets/pdf/part1.pdf)
-2. [Learning from noisy data](/assets/pdf/part2.pdf)
-3. [Learning from incomplete operators](/assets/pdf/part3.pdf)
-4. [Equivariant imaging](/assets/pdf/part4.pdf)
-5. [Identification theory](/assets/pdf/part5.pdf)
-5. [Perspectives](/assets/pdf/part6.pdf)
+Playlist youtube: https://youtube.com/playlist?list=PLrflIVF5S9hDfFKdH3yAgNrLnP2JF6WBN&si=t46JCApNlTSsuNDz
+
+**Videos & Slides**: 
+
+1. Introduction. [video](https://youtu.be/gf-WCHXAdfk), [slides](/assets/pdf/part1.pdf)
+2. Learning from noisy data [video](https://youtu.be/dxgvrooTZqQ), [slides](/assets/pdf/part2.pdf)
+3. Learning from incomplete operators. [video](https://youtu.be/bIjEmd0kGN8), [slides](/assets/pdf/part3.pdf)
+4. Equivariant imaging. [video](https://youtu.be/7M52ensBFxM), [slides](/assets/pdf/part4.pdf)
+5. Identification theory. [video](https://youtu.be/Z1N7o9PlRIc), [slides](/assets/pdf/part5.pdf)
+5. Perspectives. [video](https://youtu.be/pk6Sl52c9x4), [slides](/assets/pdf/part6.pdf)
 
 **Code**: We will follow the Google Colab demo in [this link](https://colab.research.google.com/drive/1_dlXdNbgwg5u7_OAl29WiMRMOybnkCIo?usp=sharing).
+Advanced self-supervised learning [MRI benchmarking code](https://andrewwango.github.io/deepinv-selfsup-fastmri) by Andrew Wang.
 More self-supervised learning demos can be found on the deepinverse website [here](https://deepinv.github.io/deepinv/auto_examples/index.html#self-supervised-learning).
+
 
 
 **Abstract**: This tutorial will cover core concepts and recent advances in the emerging field of self-supervised
@@ -54,12 +59,14 @@ List of references mentioned in the tutorial by topic.
 - Eldar, Yonina C. "Generalized SURE for exponential families: Applications to regularization." IEEE Transactions on Signal Processing 57.2 (2008): 471-481.
 - Metzler, Christopher A., et al. "Unsupervised learning with Stein's unbiased risk estimator." arXiv preprint arXiv:1805.10531 (2018).
 - Kim, Kwanyoung, and Jong Chul Ye. "Noise2score: tweedies approach to self-supervised image denoising without clean images." Advances in Neural Information Processing Systems 34 (2021): 864-874.
+- Tachella, Julian, Mike Davies, and Laurent Jacques. "UNSURE: Unknown Noise level Stein's Unbiased Risk Estimator." ICLR (2024).
 
 ##### Noisier2Noise methods
 - Moran, Nick, et al. "Noisier2noise: Learning to denoise from unpaired noisy data." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
 - Pang, Tongyao, et al. "Recorrupted-to-recorrupted: Unsupervised deep learning for image denoising." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2021.
 - Oliveira, Natalia L., Jing Lei, and Ryan J. Tibshirani. "Unbiased risk estimation in the normal means problem via coupled bootstrap techniques." arXiv preprint arXiv:2111.09447 (2021).
 - Oliveira, Natalia L., Jing Lei, and Ryan J. Tibshirani. "Unbiased test error estimation in the poisson means problem via coupled bootstrap techniques." arXiv preprint arXiv:2212.01943 (2022).
+- Monroy, Brayan, Jorge Bacca, and Julian Tachella. "Generalized Recorrupted-to-Recorrupted: Self-Supervised Learning Beyond Gaussian Noise." CVPR (2025).
 
 ##### Noise2Void and cross-validation methods
 - Efron, Bradley. "The estimation of prediction error: covariance penalties and cross-validation." Journal of the American Statistical Association 99.467 (2004): 619-632.
@@ -85,6 +92,8 @@ List of references mentioned in the tutorial by topic.
 - Chen, Dongdong, Julian Tachella, and Mike E. Davies. "Equivariant imaging: Learning beyond the range space." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2021.
 - Chen, Dongdong, Julian Tachella, and Mike E. Davies. "Robust equivariant imaging: a fully unsupervised framework for learning to image from noisy and partial measurements." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022.
 - Scanvic, Jeremy, et al. "Self-supervised learning for image super-resolution and deblurring." arXiv preprint arXiv:2312.11232 (2023).
+- Wang, Andrew, and Mike Davies. "Perspective-equivariant imaging: an unsupervised framework for multispectral pansharpening." ECCV Workshops (2024).
+- Wang, Andrew, and Mike Davies. "Fully Unsupervised Dynamic MRI Reconstruction via Diffeo-Temporal Equivariance." ISBI (2025).
 
 #### Part V: Identification theory
 - Sauer, Tim, James A. Yorke, and Martin Casdagli. "Embedology." Journal of statistical Physics 65 (1991): 579-616.
