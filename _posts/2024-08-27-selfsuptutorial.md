@@ -11,7 +11,7 @@ This page contains information about the tutorial on self-supervised learning fo
 The tutorial is part of the [EUSIPCO 2024 conference](https://eusipcolyon.sciencesconf.org/resource/page/id/28) on the 26/08/2024 in Lyon, France, and the MAC-MIGS doctoral school given at the University of Edinburgh in February 2025.
 
 
-Playlist youtube: https://youtube.com/playlist?list=PLrflIVF5S9hDfFKdH3yAgNrLnP2JF6WBN&si=t46JCApNlTSsuNDz
+[YouTube Playlist](https://youtube.com/playlist?list=PLrflIVF5S9hDfFKdH3yAgNrLnP2JF6WBN&si=t46JCApNlTSsuNDz)
 
 **Videos & Slides**: 
 
@@ -20,7 +20,13 @@ Playlist youtube: https://youtube.com/playlist?list=PLrflIVF5S9hDfFKdH3yAgNrLnP2
 3. Learning from incomplete operators. [video](https://youtu.be/bIjEmd0kGN8), [slides](/assets/pdf/part3.pdf)
 4. Equivariant imaging. [video](https://youtu.be/7M52ensBFxM), [slides](/assets/pdf/part4.pdf)
 5. Identification theory. [video](https://youtu.be/Z1N7o9PlRIc), [slides](/assets/pdf/part5.pdf)
-5. Perspectives. [video](https://youtu.be/pk6Sl52c9x4), [slides](/assets/pdf/part6.pdf)
+6. Perspectives. [video](https://youtu.be/pk6Sl52c9x4), [slides](/assets/pdf/part6.pdf)
+
+Bonus videos: 
+- [UNSURE: Unknown Noise level Stein's Unbiased Risk Estimate](https://youtu.be/p0KXiReF3sg?si=mw5rMkYFAkoYFr4Q)
+- [Generalized Recorrupted2Recorrupted](https://youtu.be/C9IHJm_Ie2k?si=FBOzZ9tDu63k_Hdz)
+- [Equivariant Imaging with real-world group transforms](https://youtu.be/3JtrPP7qUCY?si=a3304Ad6viMwF_e7)
+
 
 **Code**: We will follow the Google Colab demo in [this link](https://colab.research.google.com/drive/1_dlXdNbgwg5u7_OAl29WiMRMOybnkCIo?usp=sharing).
 Advanced self-supervised learning [MRI benchmarking code](https://andrewwango.github.io/deepinv-selfsup-fastmri) by Andrew Wang.
