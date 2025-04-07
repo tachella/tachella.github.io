@@ -4,7 +4,7 @@ permalink: /talks/
 title: Talks
 img: assets/img/eusipco_talk.jpg
 description: Some selected talks
-years: [2024, 2023, 2022, 2021, 2020, 2019]
+years: [2025, 2024, 2023, 2022, 2021, 2020, 2019]
 nav: true
 ---
 
