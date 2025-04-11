@@ -8,6 +8,8 @@ nav: true
 
 #### Postdocs
 
+- [Mar 25 - ...] [Romain Vo](https://romainvo.github.io/)
+
 #### PhD Students
 
 - [Apr 23 - ...] [Jeremy Scanvic](https://jeremyscanvic.com/) (with [N. Pustelnik](https://perso.ens-lyon.fr/patrice.abry/) and [Q. Barthelemy](https://scholar.google.fr/citations?user=97OQs9IAAAAJ&hl=en), funded by [Foxstream](https://www.foxstream.us.com/))
@@ -17,8 +19,11 @@ nav: true
 
 #### Visiting Students
 
+- [Mar 25 - Jun 25] [Ashesh](https://ashesh-0.github.io/), PhD student from Human Technopole, Milan
 
 #### Master Interns
+
+- [Feb 25 - Jul 25] Antoine Crosnier with [Loic Denis](https://perso.univ-st-etienne.fr/deniloic/)
 
 
 ### Alumni
