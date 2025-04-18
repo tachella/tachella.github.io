@@ -1,6 +1,17 @@
 ---
 ---
 
+@article{terris2025ram,
+  title={Reconstruct Anything Model: a lightweight foundational model for computational imaging},
+  author={Terris, Matthieu and Hurault, Samuel and Song, Maxime and Tachella, Julián},
+  arxiv={2412.04648},
+  code = {https://github.com/matthieutrs/ram},
+  selected={true},
+  preview = {terris2025ram.png},
+  abstract = {Most existing learning-based methods for solving imaging inverse problems can be roughly divided into two classes: iterative algorithms, such as plug-and-play and diffusion methods, that leverage pretrained denoisers, and unrolled architectures that are trained end-to-end for specific imaging problems. Iterative methods in the first class are computationally costly and often provide suboptimal reconstruction performance, whereas unrolled architectures are generally specific to a single inverse problem and require expensive training. In this work, we propose a novel non-iterative, lightweight architecture that incorporates knowledge about the forward operator (acquisition physics and noise parameters) without relying on unrolling. Our model is trained to solve a wide range of inverse problems beyond denoising, including deblurring, magnetic resonance imaging, computed tomography, inpainting, and super-resolution. The proposed model can be easily adapted to unseen inverse problems or datasets with a few fine-tuning steps (up to a few images) in a self-supervised way, without ground-truth references. Throughout a series of experiments, we demonstrate state-of-the-art performance from medical imaging to low-photon imaging and microscopy.},
+  year={2025}
+}
+
 @article{monroy2024gr2r,
   title={Generalized Recorrupted-to-Recorrupted: Self-Supervised Learning Beyond Gaussian Noise},
   author={Brayan Monroy and Jorge Bacca and Julian Tachella},
@@ -32,6 +43,7 @@
   pdf = {https://openreview.net/forum?id=ScVnYBaSEw},
   preview = {UNSURE_demo.png},
   code = {https://github.com/tachella/unsure},
+  selected={true},
   abstract = {Recently, many self-supervised learning methods for image reconstruction have been proposed that can learn from noisy data alone, bypassing the need for ground-truth references. Most existing methods cluster around two classes: i) Noise2Self and similar cross-validation methods that require very mild knowledge about the noise distribution, and ii) Stein's Unbiased Risk Estimator (SURE) and similar approaches that assume full knowledge of the distribution. The first class of methods is often suboptimal compared to supervised learning, and the second class is often impractical, as the noise level is generally unknown in real-world applications. In this paper, we provide a theoretical framework that characterizes this expressivity-robustness trade-off and propose a new approach based on SURE, but unlike the standard SURE, does not require knowledge about the noise level. Throughout a series of experiments, we show that the proposed estimator outperforms other existing self-supervised methods on various imaging inverse problems.}
   }
 
@@ -77,7 +89,6 @@
   year={2024},
   arxiv={2310.11838},
   preview = {tachella2023equivariant.png},
-  selected={true},
   code = {https://github.com/tachella/equivariant_bootstrap},
   abstract = {Scientific imaging problems are often severely ill-posed, and hence have significant intrinsic uncertainty. Accurately quantifying the uncertainty in the solutions to such problems is therefore critical for the rigorous interpretation of experimental results as well as for reliably using the reconstructed images as scientific evidence. Unfortunately, existing imaging methods are unable to quantify the uncertainty in the reconstructed images in a manner that is robust to experiment replications. This paper presents a new uncertainty quantification methodology based on an equivariant formulation of the parametric bootstrap algorithm that leverages symmetries and invariance properties commonly encountered in imaging problems. Additionally, the proposed methodology is general and can be easily applied with any image reconstruction technique, including unsupervised training strategies that can be trained from observed data alone, thus enabling uncertainty quantification in situations where there is no ground truth data available. We demonstrate the proposed approach with a series of numerical experiments and through comparisons with alternative uncertainty quantification strategies from the state-of-the-art, such as Bayesian strategies involving score-based diffusion models and Langevin samplers. In all our experiments, the proposed method delivers remarkably accurate high-dimensional confidence regions and outperforms the competing approaches in terms of estimation accuracy, uncertainty quantification accuracy, and computing time.}
 }
@@ -119,7 +130,6 @@
   pdf = {https://ieeexplore.ieee.org/abstract/document/10004796},
   arxiv = {2209.01725},
   project = {equivariantimaging},
-  selected={true},
   abstract = {From early image processing to modern computational imaging, successful models and algorithms have relied on a fundamental property of natural signals: symmetry . Here symmetry refers to the invariance property of signal sets to transformations, such as translation, rotation, or scaling. Symmetry can also be incorporated into deep neural networks (DNNs) in the form of equivariance, allowing for more data-efficient learning. While there have been important advances in the design of end-to-end equivariant networks for image classification in recent years, computational imaging introduces unique challenges for equivariant network solutions since we typically only observe the image through some noisy ill-conditioned forward operator that itself may not be equivariant. We review the emerging field of equivariant imaging (EI) and show how it can provide improved generalization and new imaging opportunities. Along the way, we show the interplay between the acquisition physics and group actions and links to iterative reconstruction, blind compressed sensing, and self-supervised learning.},
   year={2023},
 }
