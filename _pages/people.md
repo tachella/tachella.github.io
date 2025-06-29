@@ -19,14 +19,13 @@ nav: true
 
 #### Visiting Students
 
-- [Mar 25 - Jun 25] [Ashesh](https://ashesh-0.github.io/), PhD student from Human Technopole, Milan
 
 #### Master Interns
 
-- [Feb 25 - Jul 25] Antoine Crosnier with [Loic Denis](https://perso.univ-st-etienne.fr/deniloic/)
-
 
 ### Alumni
+- [Feb 25 - Jul 25] Antoine Crosnier with [Loic Denis](https://perso.univ-st-etienne.fr/deniloic/)
+- [Mar 25 - Jun 25] [Ashesh](https://ashesh-0.github.io/), PhD student from Human Technopole, Milan
 - [Aug 24 - Nov 24] [Brett Levac](https://scholar.google.com/citations?user=rRHEl5UAAAAJ&hl=en) (PhD student at UTAustin, USA)
 - [Dec 23 - Dec 24] Postdoc [Nils Laurent](https://nils-laurent.github.io/) (with [N. Pustelnik](https://perso.ens-lyon.fr/nelly.pustelnik/) and [E. Riccietti](https://perso.ens-lyon.fr/elisa.riccietti/))
 - [Apr 23 - Nov 24] Master intern [Jeremy Scanvic](https://jeremyscanvic.com/) (with [P. Abry](https://perso.ens-lyon.fr/patrice.abry/) and [M. Davies](https://www.eng.ed.ac.uk/about/people/professor-michael-e-davies))

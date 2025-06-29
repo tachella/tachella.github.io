@@ -20,6 +20,6 @@ Deep neural networks have revolutionized the field of imaging inverse problems, 
 ### Team
 - Principal investigator: Julian Tachella (CNRS/ENS Lyon)
 - PhD Student: [Victor Sechaud](https://www.ens-lyon.fr/PHYSIQUE/presentation/annuaire/sechaud-victor) (CNRS/ENS Lyon)
-- Postdoc: (to be announced)
+- Postdoc: [Romain Vo](https://romainvo.github.io/) (CNRS/ENS Lyon)
 - Collaborator: [Nelly Pustelnik](https://perso.ens-lyon.fr/nelly.pustelnik/) (CNRS/ENS Lyon)
 - Collaborator: [Laurent Jacques](https://laurentjacques.gitlab.io/) (UCLouvain)
