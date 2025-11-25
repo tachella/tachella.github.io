@@ -1,9 +1,52 @@
 ---
 ---
 
+
+@article{hu2024structured,
+  title={Structured Random Models for Phase Retrieval with Optical Diffusers},
+  author={Zhiyuan Hu and Mammadova, Fakhriyya and Tachella, Julian and Michael Unser and Jonathan Dong},
+  year={2025},
+  arxiv={2510.14490},
+  preview = {hu2025optical.png},
+  abstract = {Phase retrieval is a nonlinear inverse problem that arises in a wide range of imaging modalities, from electron microscopy to Fourier ptychography. In particular, the reconstruction is facilitated when the sensing matrix is i.i.d. random, enabling strong theoretical guarantees and efficient reconstruction algorithms. However, its applicability is restricted by excessive computational costs. In this paper, we propose structured random models for phase retrieval, where we emulate a dense random matrix by a cascade of structured transforms and random diagonal matrices. We reduce the complexity from quadratic to log-linear at no cost in reconstruction performance. Through a spectral method initialization followed by gradient descent, robust reconstruction is obtained at an oversampling ratio as low as 2.8. Moreover, we observe that the reconstruction performance is solely determined by the singular-value distribution of the forward matrix. This class of models can directly be implemented with basic optical elements such as lenses and diffusers, paving the way for large-scale phase imaging with robust reconstruction guarantees.}
+ }
+
+@article{tachella2025, 
+  pdf = {https://doi.org/10.21105/joss.08923},
+   year = {2025},
+  author = {Tachella, Julian and Terris, Matthieu and Hurault, Samuel and Wang, Andrew and Davy, Leo and Scanvic, Jérémy and Sechaud, Victor and Vo, Romain and Moreau, Thomas and Davies, Thomas and Chen, Dongdong and Laurent, Nils and Monroy, Brayan and Dong, Jonathan and Hu, Zhiyuan and Nguyen, Minh-Hai and Sarron, Florian and Weiss, Pierre and Escande, Paul and Massias, Mathurin and Modrzyk, Thibaut and Levac, Brett and Liaudat, Tobías I. and Song, Maxime and Hertrich, Johannes and Neumayer, Sebastian and Schramm, Georg},
+  title = {DeepInverse: A Python package for solving imaging inverse problems with deep learning},
+  journal = {Journal of Open Source Software},
+  preview = {tachella2025deepinv.png},
+  code = {https://github.com/deepinv/deepinv},
+  html = {https://deepinv.github.io/deepinv/}
+}
+
+@article{sechaud2025splittingselfsupervisedlearning,
+  title={Equivariant Splitting: Self-supervised learning from incomplete data}, 
+  author={Victor Sechaud and Jeremy Scanvic and Quentin Barthelemy and Patrice Abry and Julian Tachella},
+  year={2025},
+  arxiv={2510.00929},
+  preview = {sechaud2025splitting},
+  html = {https://vsechaud.github.io/Equivariant-Splitting/},
+  code = {https://github.com/vsechaud/Equivariant-Splitting},
+  abstract={Self-supervised learning for inverse problems allows to train a reconstruction network from noise and/or incomplete data alone. These methods have the potential of enabling learning-based solutions when obtaining ground-truth references for training is expensive or even impossible. In this paper, we propose a new self-supervised learning strategy devised for the challenging setting where measurements are observed via a single incomplete observation model. We introduce a new definition of equivariance in the context of reconstruction networks, and show that the combination of self-supervised splitting losses and equivariant reconstruction networks results in the same minimizer in expectation as the one of a supervised loss. Through a series of experiments on image inpainting, accelerated magnetic resonance imaging, and compressive sensing, we demonstrate that the proposed loss achieves state-of-the-art performance in settings with highly rank-deficient forward models.}
+}
+
+
+@article{levac2025normalization,
+  title={Normalization-equivariant Diffusion Models: Learning Posterior Samplers From Noisy And Partial Measurements},
+  author={Brett Levac and Jon Tamir and Marcelo Pereyra and Julian Tachella},
+  year={2025},
+  arxiv={2510.11964},
+  preview = {levac2025normalization.png},
+  abstract = {Diffusion models (DMs) have rapidly emerged as a powerful framework for image generation and restoration. However, existing DMs are primarily trained in a supervised manner by using a large corpus of clean images. This reliance on clean data poses fundamental challenges in many real-world scenarios, where acquiring noise-free data is hard or infeasible, and only noisy and potentially incomplete measurements are available. While some methods can train DMs using noisy data, they are generally effective only when the amount of noise is very mild or when some additional noise-free data is available. In addition, existing methods for training DMs from incomplete measurements require access to multiple complementary acquisition processes, an assumption that poses a significant practical limitation. Here we introduce the first approach for learning DMs for image restoration using only noisy measurement data from a single operator. As a first key contribution, we show that DMs, and more broadly minimum mean squared error denoisers, exhibit a weak form of scale equivariance linking rescaling in signal amplitude to changes in noise intensity. We then leverage this theoretical insight to develop a denoising score-matching strategy that generalizes robustly to noise levels lower than those present in the training data, thereby enabling the learning of DMs from noisy measurements. To further address the challenges of incomplete and noisy data, we integrate our method with equivariant imaging, a complementary self-supervised learning framework that exploits the inherent invariants of imaging problems, to train DMs for image restoration from single-operator measurements that are both incomplete and noisy. We validate the effectiveness of our approach through extensive experiments on image denoising, demosaicing, and inpainting, along with comparisons with the state of the art.}
+ }
+
+
 @article{terris2025ram,
   title={Reconstruct Anything Model: a lightweight foundational model for computational imaging},
-  author={Terris, Matthieu and Hurault, Samuel and Song, Maxime and Tachella, Julián},
+  author={Terris, Matthieu and Hurault, Samuel and Song, Maxime and Tachella, Julian},
   arxiv={2503.08915},
   code = {https://github.com/matthieutrs/ram},
   selected={true},
