@@ -2,7 +2,7 @@
 ---
 
 
-@article{hu2024structured,
+@article{hu2025optical,
   title={Structured Random Models for Phase Retrieval with Optical Diffusers},
   author={Zhiyuan Hu and Mammadova, Fakhriyya and Tachella, Julian and Michael Unser and Jonathan Dong},
   year={2025},
@@ -10,6 +10,17 @@
   preview = {hu2025optical.png},
   abstract = {Phase retrieval is a nonlinear inverse problem that arises in a wide range of imaging modalities, from electron microscopy to Fourier ptychography. In particular, the reconstruction is facilitated when the sensing matrix is i.i.d. random, enabling strong theoretical guarantees and efficient reconstruction algorithms. However, its applicability is restricted by excessive computational costs. In this paper, we propose structured random models for phase retrieval, where we emulate a dense random matrix by a cascade of structured transforms and random diagonal matrices. We reduce the complexity from quadratic to log-linear at no cost in reconstruction performance. Through a spectral method initialization followed by gradient descent, robust reconstruction is obtained at an oversampling ratio as low as 2.8. Moreover, we observe that the reconstruction performance is solely determined by the singular-value distribution of the forward matrix. This class of models can directly be implemented with basic optical elements such as lenses and diffusers, paving the way for large-scale phase imaging with robust reconstruction guarantees.}
  }
+
+@article{laurent2025multilevel,
+  title={Multilevel Plug-and-Play Image Restoration},
+  author={Laurent, Nils and Tachella, Juli{\'a}n and Riccietti, Elisa and Pustelnik, Nelly},
+  year={2025},
+  journal={IEEE Transactions on Computational Imaging},
+  code = {https://github.com/laugaguillaume/IMLFISTA},
+  preview = {laurent2025multilevel.png},
+  pdf = {https://hal.science/hal-05004914v2/document},
+  abstract = {Plug-and-play (PnP) image reconstruction methods leverage pretrained deep neural network denoisers as image priors to solve general inverse problems, and can obtain a competitive performance without having to train a network on a specific problem. Despite their flexibility, PnP methods often require several iterations to converge and their performance can be highly sensitive to the choice of the initialization and of the hyperparameters. In this paper, we propose a new multilevel PnP framework that accelerates the convergence by combining iterations at different scales, and improves the robustness to initialization and hyperparameters setting using a coarseto-fine strategy. In a series of experiments, including image inpainting and demosaicing, we show that the proposed multilevel PnP method outperforms other PnP methods in both speed and reconstruction performance.},
+}
 
 @article{tachella2025, 
   pdf = {https://doi.org/10.21105/joss.08923},
