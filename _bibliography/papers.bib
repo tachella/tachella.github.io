@@ -28,7 +28,7 @@
       journal={Foundations and Trends in Signal Processing},
       year={2026},
       selected={true},
-  preview = {tachella2026review.png},
+      preview = {tachella2026review.png},
       arxiv={2601.03244},
 }
 
@@ -36,7 +36,8 @@
       title={Efficient Unrolled Networks for Large-Scale 3D Inverse Problems}, 
       author={Romain Vo and Julian Tachella},
       year={2026},
-    preview = {vo2026efficient.png},
+      journal={CVPR 2026},
+      preview = {vo2026efficient.png},
       arxiv={2601.02141},
 }
 
@@ -60,7 +61,7 @@
   abstract = {Plug-and-play (PnP) image reconstruction methods leverage pretrained deep neural network denoisers as image priors to solve general inverse problems, and can obtain a competitive performance without having to train a network on a specific problem. Despite their flexibility, PnP methods often require several iterations to converge and their performance can be highly sensitive to the choice of the initialization and of the hyperparameters. In this paper, we propose a new multilevel PnP framework that accelerates the convergence by combining iterations at different scales, and improves the robustness to initialization and hyperparameters setting using a coarseto-fine strategy. In a series of experiments, including image inpainting and demosaicing, we show that the proposed multilevel PnP method outperforms other PnP methods in both speed and reconstruction performance.},
 }
 
-@article{tachella2025, 
+@article{tachella2025deepinv, 
   pdf = {https://doi.org/10.21105/joss.08923},
    year = {2025},
   author = {Tachella, Julian and Terris, Matthieu and Hurault, Samuel and Wang, Andrew and Davy, Leo and Scanvic, Jérémy and Sechaud, Victor and Vo, Romain and Moreau, Thomas and Davies, Thomas and Chen, Dongdong and Laurent, Nils and Monroy, Brayan and Dong, Jonathan and Hu, Zhiyuan and Nguyen, Minh-Hai and Sarron, Florian and Weiss, Pierre and Escande, Paul and Massias, Mathurin and Modrzyk, Thibaut and Levac, Brett and Liaudat, Tobías I. and Song, Maxime and Hertrich, Johannes and Neumayer, Sebastian and Schramm, Georg},
@@ -74,8 +75,9 @@
 @article{sechaud2025splittingselfsupervisedlearning,
   title={Equivariant Splitting: Self-supervised learning from incomplete data}, 
   author={Victor Sechaud and Jeremy Scanvic and Quentin Barthelemy and Patrice Abry and Julian Tachella},
-  year={2025},
+  year={2026},
   arxiv={2510.00929},
+  journal={ICLR 2026},
   preview = {sechaud2025splitting.png},
   html = {https://vsechaud.github.io/Equivariant-Splitting/},
   code = {https://github.com/vsechaud/Equivariant-Splitting},
@@ -97,11 +99,12 @@
   title={Reconstruct Anything Model: a lightweight foundational model for computational imaging},
   author={Terris, Matthieu and Hurault, Samuel and Song, Maxime and Tachella, Julian},
   arxiv={2503.08915},
+  journal={ICLR 2026},
   code = {https://github.com/matthieutrs/ram},
   selected={true},
   preview = {terris2025ram.png},
   abstract = {Most existing learning-based methods for solving imaging inverse problems can be roughly divided into two classes: iterative algorithms, such as plug-and-play and diffusion methods, that leverage pretrained denoisers, and unrolled architectures that are trained end-to-end for specific imaging problems. Iterative methods in the first class are computationally costly and often provide suboptimal reconstruction performance, whereas unrolled architectures are generally specific to a single inverse problem and require expensive training. In this work, we propose a novel non-iterative, lightweight architecture that incorporates knowledge about the forward operator (acquisition physics and noise parameters) without relying on unrolling. Our model is trained to solve a wide range of inverse problems beyond denoising, including deblurring, magnetic resonance imaging, computed tomography, inpainting, and super-resolution. The proposed model can be easily adapted to unseen inverse problems or datasets with a few fine-tuning steps (up to a few images) in a self-supervised way, without ground-truth references. Throughout a series of experiments, we demonstrate state-of-the-art performance from medical imaging to low-photon imaging and microscopy.},
-  year={2025}
+  year={2026}
 }
 
 @article{monroy2024gr2r,
