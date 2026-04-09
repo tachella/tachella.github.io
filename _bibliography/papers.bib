@@ -5,40 +5,43 @@
 @article{sechaud2026tmlr,
   title={Learning to reconstruct from saturated data: audio declipping and high-dynamic range imaging},
   author={Sechaud, Victor and Jacques, Laurent and Abry, Patrice and Tachella, Julian},
-  journal={TMLR, Featured Certification},
+  journal={Transactions of Machine Learning Research (TMLR). Featured Certification.},
   year={2026},
   preview={sechaud2026tmlr.png},
   pdf = {https://openreview.net/pdf?id=AkJWgglkLd},
+  code = {https://github.com/vsechaud/Learn-to-reconstruct-from-saturated-data},
   abstract = {Learning based methods are now ubiquitous for solving inverse problems, but their deployment in real-world applications is often hindered by the lack of ground truth references for training. Recent self-supervised learning strategies offer a promising alternative, avoiding the need for ground truth. However, most existing methods are limited to linear inverse problems. This work extends self-supervised learning to the non-linear problem of recovering audio and images from clipped measurements, by assuming that the signal distribution is approximately invariant to changes in amplitude. We provide sufficient conditions for learning to reconstruct from saturated signals alone and a self-supervised loss that can be used to train reconstruction networks. Experiments on both audio and image data show that the proposed approach is almost as effective as fully supervised approaches, despite relying solely on clipped measurements for training.}  
   }
 
 
 @article{mehta2026deq,
-      title={Equivariant Deep Equilibrium Models for Imaging Inverse Problems}, 
-      author={Alexander Mehta, Ruangrawee Kitichotkul, Vivek K Goyal, Julian Tachella},
-      year={2026},
-      journal={ICASSP 2026},
-      preview = {mehta2026deq.png},
-      arxiv={2511.18667},
+  title={Equivariant Deep Equilibrium Models for Imaging Inverse Problems}, 
+  author={Alexander Mehta, Ruangrawee Kitichotkul, Vivek Goyal and Julian Tachella},
+  year={2026},
+  journal={ICASSP},
+  preview = {mehta2026deq.png},
+  arxiv={2511.18667},
+  abs = {Equivariant imaging (EI) enables training signal reconstruction models without requiring ground truth data by leveraging signal symmetries. Deep equilibrium models (DEQs) are a powerful class of neural networks where the output is a fixed point of a learned operator. However, training DEQs with complex EI losses requires implicit differentiation through fixed-point computations, whose implementation can be challenging. We show that backpropagation can be implemented modularly, simplifying training. Experiments demonstrate that DEQs trained with implicit differentiation outperform those trained with Jacobian-free backpropagation and other baseline methods. Additionally, we find evidence that EI-trained DEQs approximate the proximal map of an invariant prior.}
 }
 
 @article{tachella2026review,
-      title={Self-Supervised Learning from Noisy and Incomplete Data}, 
-      author={Julian Tachella and Mike Davies},
-      journal={Foundations and Trends in Signal Processing},
-      year={2026},
-      selected={true},
-      preview = {tachella2026review.png},
-      arxiv={2601.03244},
+    title={Self-Supervised Learning from Noisy and Incomplete Data}, 
+    author={Julian Tachella and Mike Davies},
+    journal={Foundations and Trends in Signal Processing},
+    year={2026},
+    selected={true},
+    preview = {tachella2026review.png},
+    arxiv={2601.03244},
 }
 
 @article{vo2026efficient,
       title={Efficient Unrolled Networks for Large-Scale 3D Inverse Problems}, 
       author={Romain Vo and Julian Tachella},
       year={2026},
-      journal={CVPR 2026},
+      journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Oral Presentation},
       preview = {vo2026efficient.png},
       arxiv={2601.02141},
+      abs = {Deep learning-based methods have revolutionized the field of imaging inverse problems, yielding state-of-the-art performance across various imaging domains. The best performing networks incorporate the imaging operator within the network architecture, typically in the form of deep unrolling. However, in large-scale problems, such as 3D imaging, most existing methods fail to incorporate the operator in the architecture due to the prohibitive amount of memory required by global forward operators, which hinder typical patching strategies. In this work, we present a domain partitioning strategy and normal operator approximations that enable the training of end-to-end reconstruction models incorporating forward operators of arbitrarily large problems into their architecture. The proposed method achieves state-of-the-art performance on 3D X-ray cone-beam tomography and 3D multi-coil accelerated MRI, while requiring only a single GPU for both training and inference.}
 }
 
 @article{hu2025optical,
@@ -205,7 +208,7 @@
 @inproceedings{sheehan2023splines,
   title={Hardware Friendly Spline Sketched Lidar},
   author={Sheehan, Michael P and Tachella, Julian and Davies, Mike E},
-  booktitle={ICASSP'23},
+  booktitle={ICASSP},
   year={2023},
   arxiv = {2210.07314},
   preview = {sheehan2022splines.png},
@@ -275,7 +278,7 @@
 @article{tachella2022srt3d,
   title={Sketched RT3D: How to reconstruct billions of photons per second},
   author={Tachella, Julian and Sheehan, Michael P. and Davies, Mike},
-  journal={Best Student Paper Award at ICASSP'22},
+  journal={Best Student Paper Award at ICASSP},
   arxiv={2203.00952},
   year={2022},
   month = {Mar},
