@@ -1,7 +1,7 @@
 ---
 layout: page
 title: UNLIP - Unsupervised Learning for Non-Linear Inverse Problems
-card_title: <span style="text-transform: uppercase;">UNLIP</span> - Unsupervised Learning for Non-Linear Inverse Problems
+card_title: '<span style="text-transform: uppercase;">UNLIP</span> - Unsupervised Learning for Non-Linear Inverse Problems'
 img: assets/img/unlip_project.png
 importance: 1
 category: work
