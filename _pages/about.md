@@ -16,7 +16,7 @@ selected_papers: yes # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a research scientist at the French National Centre for Scientific Research [CNRS](https://www.cnrs.fr/), working at the [Sisyph laboratory](http://www.ens-lyon.fr/PHYSIQUE/teams/signaux-systemes-physique), [École Normale Supérieure de Lyon](http://www.ens-lyon.fr/) (Lyon, France). I am also the co-founder and CSO of [Blur Labs](https://blurlabs.ai/).
+I am a research scientist (HdR) at the French National Centre for Scientific Research [CNRS](https://www.cnrs.fr/), working at the [Sisyph laboratory](http://www.ens-lyon.fr/PHYSIQUE/teams/signaux-systemes-physique), [École Normale Supérieure de Lyon](http://www.ens-lyon.fr/) (Lyon, France). I am also the co-founder and CSO of [Blur Labs](https://blurlabs.ai/).
 
 My work lies at the intersection of signal processing and machine learning. I am particularly interested in the theory of imaging inverse problems and applications in computational imaging.
 
