@@ -24,6 +24,9 @@ Deep neural networks have revolutionized the field of imaging inverse problems, 
 - Sep 2026: [DeepInverse Hackathon (CIRM, Marseille)](https://conferences.cirm-math.fr/3901.html)
 - Sep 2026: [Workshop on Learning-based Methods for Inverse Problems](https://tachella.github.io/lip_workshop/)
 
+### Publications
+{% include unlip_papers.liquid %}
+
 ### Team
 - Principal investigator: Julian Tachella (CNRS/ENS Lyon)
 - PhD Student: [Victor Sechaud](https://www.ens-lyon.fr/PHYSIQUE/presentation/annuaire/sechaud-victor) (CNRS/ENS Lyon)

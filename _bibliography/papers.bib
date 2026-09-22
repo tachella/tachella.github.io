@@ -7,6 +7,7 @@
   author={Sechaud, Victor and Jacques, Laurent and Abry, Patrice and Tachella, Julian},
   journal={Transactions of Machine Learning Research (TMLR). <strong>Featured Certification.</strong>},
   year={2026},
+  unlip={true},
   preview={sechaud2026tmlr.png},
   pdf = {https://openreview.net/pdf?id=AkJWgglkLd},
   code = {https://github.com/vsechaud/Learn-to-reconstruct-from-saturated-data},
@@ -19,6 +20,7 @@
   author={Alexander Mehta and Ruangrawee Kitichotkul and Vivek Goyal and Julian Tachella},
   year={2026},
   journal={ICASSP 2026},
+  unlip={true},
   preview = {mehta2026deq.png},
   arxiv={2511.18667},
   html = {https://ieeexplore.ieee.org/document/11463665/},
@@ -31,6 +33,7 @@
     journal={Foundations and Trends in Signal Processing},
     year={2026},
     selected={true},
+    unlip={true},
     preview = {tachella2026review.png},
     arxiv={2601.03244},
     html = {https://www.emerald.com/ftsig/article-abstract/20/2/85/1360492/Self-supervised-learning-from-noisy-and-incomplete?redirectedFrom=fulltext},
@@ -85,6 +88,7 @@
   year={2026},
   arxiv={2510.00929},
   journal={ICLR 2026},
+  unlip={true},
   preview = {sechaud2025splitting.png},
   html = {https://vsechaud.github.io/Equivariant-Splitting/},
   code = {https://github.com/vsechaud/Equivariant-Splitting},
@@ -98,6 +102,7 @@
   year={2026},
   journal={ICML 2026},
   arxiv={2510.11964},
+  unlip={true},
   preview = {levac2025normalization.png},
   abstract = {Diffusion models (DMs) have rapidly emerged as a powerful framework for image generation and restoration. However, existing DMs are primarily trained in a supervised manner by using a large corpus of clean images. This reliance on clean data poses fundamental challenges in many real-world scenarios, where acquiring noise-free data is hard or infeasible, and only noisy and potentially incomplete measurements are available. While some methods can train DMs using noisy data, they are generally effective only when the amount of noise is very mild or when some additional noise-free data is available. In addition, existing methods for training DMs from incomplete measurements require access to multiple complementary acquisition processes, an assumption that poses a significant practical limitation. Here we introduce the first approach for learning DMs for image restoration using only noisy measurement data from a single operator. As a first key contribution, we show that DMs, and more broadly minimum mean squared error denoisers, exhibit a weak form of scale equivariance linking rescaling in signal amplitude to changes in noise intensity. We then leverage this theoretical insight to develop a denoising score-matching strategy that generalizes robustly to noise levels lower than those present in the training data, thereby enabling the learning of DMs from noisy measurements. To further address the challenges of incomplete and noisy data, we integrate our method with equivariant imaging, a complementary self-supervised learning framework that exploits the inherent invariants of imaging problems, to train DMs for image restoration from single-operator measurements that are both incomplete and noisy. We validate the effectiveness of our approach through extensive experiments on image denoising, demosaicing, and inpainting, along with comparisons with the state of the art.}
  }
@@ -110,6 +115,7 @@
   journal={ICLR 2026},
   code = {https://github.com/matthieutrs/ram},
   selected={true},
+  unlip={true},
   preview = {terris2025ram.png},
   abstract = {Most existing learning-based methods for solving imaging inverse problems can be roughly divided into two classes: iterative algorithms, such as plug-and-play and diffusion methods, that leverage pretrained denoisers, and unrolled architectures that are trained end-to-end for specific imaging problems. Iterative methods in the first class are computationally costly and often provide suboptimal reconstruction performance, whereas unrolled architectures are generally specific to a single inverse problem and require expensive training. In this work, we propose a novel non-iterative, lightweight architecture that incorporates knowledge about the forward operator (acquisition physics and noise parameters) without relying on unrolling. Our model is trained to solve a wide range of inverse problems beyond denoising, including deblurring, magnetic resonance imaging, computed tomography, inpainting, and super-resolution. The proposed model can be easily adapted to unseen inverse problems or datasets with a few fine-tuning steps (up to a few images) in a self-supervised way, without ground-truth references. Throughout a series of experiments, we demonstrate state-of-the-art performance from medical imaging to low-photon imaging and microscopy.},
   year={2026}
@@ -121,6 +127,7 @@
   journal={CVPR 2025},
   year={2025},
   arxiv={2412.04648},
+  unlip={true},
   preview = {monroy2024gr2r.png},
   code = {https://github.com/bemc22/GeneralizedR2R},
   abstract = {Recorrupted-to-Recorrupted (R2R) has emerged as a methodology for training deep networks for image restoration in a self-supervised manner from noisy measurement data alone, demonstrating equivalence in expectation to the supervised squared loss in the case of Gaussian noise. However, its effectiveness with non-Gaussian noise remains unexplored. In this paper, we propose Generalized R2R (GR2R), extending the R2R framework to handle a broader class of noise distribution as additive noise like log-Rayleigh and address the natural exponential family including Poisson and Gamma noise distributions, which play a key role in many applications including low-photon imaging and synthetic aperture radar. We show that the GR2R loss is an unbiased estimator of the supervised loss and that the popular Stein's unbiased risk estimator can be seen as a special case. A series of experiments with Gaussian, Poisson, and Gamma noise validate GR2R's performance, showing its effectiveness compared to other self-supervised methods.},
@@ -147,6 +154,7 @@
   preview = {UNSURE_demo.png},
   code = {https://github.com/tachella/unsure},
   selected={true},
+  unlip={true},
   abstract = {Recently, many self-supervised learning methods for image reconstruction have been proposed that can learn from noisy data alone, bypassing the need for ground-truth references. Most existing methods cluster around two classes: i) Noise2Self and similar cross-validation methods that require very mild knowledge about the noise distribution, and ii) Stein's Unbiased Risk Estimator (SURE) and similar approaches that assume full knowledge of the distribution. The first class of methods is often suboptimal compared to supervised learning, and the second class is often impractical, as the noise level is generally unknown in real-world applications. In this paper, we provide a theoretical framework that characterizes this expressivity-robustness trade-off and propose a new approach based on SURE, but unlike the standard SURE, does not require knowledge about the noise level. Throughout a series of experiments, we show that the proposed estimator outperforms other existing self-supervised methods on various imaging inverse problems.}
   }
 
@@ -155,6 +163,7 @@
   author={Sechaud, Victor and Jacques, Laurent and Abry, Patrice and Tachella, Julian},
   journal={EUSIPCO 2024},
   year={2024},
+  unlip={true},
   preview={clipped_eusipco.png},
   pdf = {https://eurasip.org/Proceedings/Eusipco/Eusipco2024/pdfs/0000852.pdf},
   abstract = {In numerous inverse problems, state-of-the-art solving strategies involve training neural networks from ground truth and associated measurement datasets that, however, may be expensive or impossible to collect. Recently, self-supervised learning techniques have emerged, with the major advantage of no longer requiring ground truth data. Most theoretical and experimental results on self-supervised learning focus on linear inverse problems. The present work aims to study self-supervised learning for the non-linear inverse problem of recovering audio signals from clipped measurements. An equivariance-based selfsupervised loss is proposed and studied. Performance is assessed on simulated clipped measurements with controlled and varied levels of clipping, and further reported on standard real music signals. We show that the performance of the proposed equivariance-based self-supervised declipping strategy compares favorably to fully supervised learning while only requiring clipped measurements alone for training.}
@@ -167,6 +176,7 @@
   journal={IEEE Transactions on Computational Imaging},
   year={2025},
   arxiv={2312.11232},
+  unlip={true},
   preview = {scanvic2023scale.png},
   code = {https://github.com/jscanvic/Scale-Equivariant-Imaging},
   abstract = {Self-supervised methods have recently proved to be nearly as effective as supervised methods in various imaging inverse problems, paving the way for learning-based methods in scientific and medical imaging applications where ground truth data is hard or expensive to obtain. This is the case in magnetic resonance imaging and computed tomography. These methods critically rely on invariance to translations and/or rotations of the image distribution to learn from incomplete measurement data alone. However, existing approaches fail to obtain competitive performances in the problems of image super-resolution and deblurring, which play a key role in most imaging systems. In this work, we show that invariance to translations and rotations is insufficient to learn from measurements that only contain low-frequency information. Instead, we propose a new self-supervised approach that leverages the fact that many image distributions are approximately scale-invariant, and that can be applied to any inverse problem where high-frequency information is lost in the measurement process. We demonstrate throughout a series of experiments on real datasets that the proposed method outperforms other self-supervised approaches, and obtains performances on par with fully supervised learning.},
@@ -200,7 +210,9 @@
   title={Learning to Reconstruct Signals from Binary Measurements},
   author={Tachella, Julian and Jacques, Laurent},
   journal={Transactions of Machine Learning Research (TMLR). <strong>Featured Certification.</strong>},
-  year={2023},
+  year={2024},
+  month={Sep},
+  unlip={true},
   arxiv = {2303.08691},
   preview = {tachella2023onebit.gif},
   project = {equivariantimaging},
