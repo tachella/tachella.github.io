@@ -8,6 +8,12 @@ category: work
 ---
 
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/unlip_cover.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 This website contains information about the ANR JCJC project UNLIP.
 
 ANR project website: [anr.fr](https://anr.fr/en/funded-projects-and-impact/funded-projects/project/funded/project/b2d9d3668f92a3b9fbbf7866072501ef-823dad8221/?tx_anrprojects_funded%5Bcontroller%5D=Funded&cHash=c266c5da697fd41fed7727d6331f7ade)
